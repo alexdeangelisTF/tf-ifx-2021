@@ -1,0 +1,46 @@
+/*
+Theme Name: TF IFX Payments 2021
+Author: Thinking Fox
+Author URI: https://www.thinkingfox.com
+Version: 1.0.0
+*/
+
+/* Default browser size is 16px.
+:root font-size: 62.5% sets the browser font at 10px.
+Then body font-size: 1.6rem sets the font of the body back to 16px
+This way any px sizes can be converted to rem by moving the decimal place up one
+e.g. 20px becomes 2rem, 24px becomes 2.4rem */
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size:1.6rem;
+}
+
+.container {
+    margin-top:3rem;
+}
+
+.col,
+[class^="col-"] {
+    background-color:#F8F9FA;
+    border: 1px solid #C9C1D4;
+    padding:2rem 1rem;
+    font-size:1.4rem;
+}
+
+.alignment {
+    height:160px;
+    background-color:#FFE5E5;
+    margin-bottom:15px;
+}
+
+h2 {
+    font-size:2.5rem;
+}
+
+p {
+    font-size:2rem;
+}
