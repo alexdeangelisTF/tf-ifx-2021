@@ -1,0 +1,12 @@
+/* Default browser size is 16px.
+:root font-size: 62.5% sets the browser font at 10px.
+Then body font-size: 1.6rem sets the font of the body back to 16px
+This way any px sizes can be converted to rem by moving the decimal place up one
+e.g. 20px becomes 2rem, 24px becomes 2.4rem */
+:root {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.6rem; }
+
+/*# sourceMappingURL=ifx-2021.css.map */
