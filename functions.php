@@ -13,7 +13,7 @@ function your_scripts() {
 	/*Bootstrap 4*/
 	wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css' );
 	/*Font Awesome*/
-	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.4.1/css/all.css' );
+	wp_enqueue_style( 'font-awesome', 'https://use.fontawesome.com/releases/v5.15.2/css/all.css' );
 	/*My Styles*/
 	wp_enqueue_style( 'styles', get_stylesheet_uri(), array(), '1.0.0' );
 	/*Bootstrap JS*/
