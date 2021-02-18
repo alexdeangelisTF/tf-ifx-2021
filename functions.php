@@ -43,7 +43,7 @@ add_theme_support( 'post-thumbnails' );
 // Kernl Updater
 require 'kernl-update-checker/kernl-update-checker.php';
 $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-    'https://kernl.us/api/v1/theme-updates/602cf23683314e62c8b61656/',
+    'https://kernl.us/api/v1/theme-updates/602eab062ab8c7578a7080a3/',
     __FILE__,
     'tf-ifx-2021'
 );
