@@ -39,3 +39,11 @@ add_theme_support( 'title-tag' );
 
 // Post Thumbnails support
 add_theme_support( 'post-thumbnails' );
+
+// Kernl Updater
+require 'kernl-update-checker/kernl-update-checker.php';
+$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+    'https://kernl.us/api/v1/theme-updates/602cf23683314e62c8b61656/',
+    __FILE__,
+    'tf-ifx-2021'
+);
