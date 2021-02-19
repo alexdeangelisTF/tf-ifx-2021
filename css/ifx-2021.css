@@ -161,22 +161,13 @@ a {
   a:hover {
     color: #2a3a46; }
 
-header ul {
-  padding: 0;
-  display: flex;
-  flex-direction: row; }
-  header ul li {
-    list-style-type: none;
-    display: inline-block; }
-    header ul li a {
-      font-weight: 700; }
-      header ul li a:hover {
-        text-decoration: none; }
-    header ul li ul {
-      flex-direction: column; }
-      header ul li ul li {
-        display: block; }
-        header ul li ul li a {
-          font-weight: 400; }
+header ul li a {
+  font-weight: 700;
+  color: #222222; }
+header ul li ul.dropdown-menu {
+  font-size: 1.6rem; }
+header ul li ul li a.dropdown-item {
+  font-weight: 700;
+  color: #222222; }
 
 /*# sourceMappingURL=ifx-2021.css.map */
