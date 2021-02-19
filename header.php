@@ -19,10 +19,13 @@ $themeURL = get_template_directory_uri();
 			<?php
 			
 			echo '<header>';
-			echo '<nav class="navbar navbar-expand-md" role="navigation">';
+			echo '<nav class="navbar navbar-expand-lg" role="navigation">';
 			echo '<div class="container">';
-			echo '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false">';
-			echo '<span class="navbar-toggler-icon"></span>';
+			echo '<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false">';
+			echo '<span class="sr-only">Toggle navigation</span>';
+			echo '<span class="icon-bar top-bar"></span>';
+			echo '<span class="icon-bar middle-bar"></span>';
+			echo '<span class="icon-bar bottom-bar"></span>';
 			echo '</button>';
 			wp_nav_menu( 
 				array(
@@ -38,6 +41,4 @@ $themeURL = get_template_directory_uri();
 			);
 			echo '</div>';
 			echo '</header>';
-				
-				
 			?>
