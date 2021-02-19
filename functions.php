@@ -3,6 +3,10 @@
 function register_menus() {
 	register_nav_menu('main-menu',__( 'Main Menu' ));
 	register_nav_menu('main-menu-right',__( 'Main Menu - Right' ));
+	register_nav_menu('menu-footer-company',__( 'Footer - Company' ));
+	register_nav_menu('menu-footer-solutions',__( 'Footer - Solutions' ));
+	register_nav_menu('menu-footer-markets',__( 'Footer - Markets' ));
+	register_nav_menu('menu-footer-legal',__( 'Footer - Legal' ));
 }
 add_action( 'init', 'register_menus' );
 
