@@ -6,7 +6,159 @@ e.g. 20px becomes 2rem, 24px becomes 2.4rem */
 :root {
   font-size: 62.5%; }
 
+@font-face {
+  src: url("../fonts/ll-brown-pro/lineto-brown-pro-bold.woff2") format("woff2"), url("../fonts/ll-brown-pro/lineto-brown-pro-bold.woff") format("woff");
+  font-family: "BrownPro";
+  font-weight: 700; }
+@font-face {
+  src: url("../fonts/ll-brown-pro/lineto-brown-pro-regular.woff2") format("woff2"), url("../fonts/ll-brown-pro/lineto-brown-pro-regular.woff") format("woff");
+  font-family: "BrownPro";
+  font-weight: 400; }
+@font-face {
+  src: url("../fonts/ll-brown-pro/lineto-brown-pro-light.woff2") format("woff2"), url("../fonts/ll-brown-pro/lineto-brown-pro-light.woff") format("woff");
+  font-family: "BrownPro";
+  font-weight: 300; }
+@font-face {
+  src: url("../fonts/ll-brown-pro/lineto-brown-pro-thin.woff2") format("woff2"), url("../fonts/ll-brown-pro/lineto-brown-pro-thin.woff") format("woff");
+  font-family: "BrownPro";
+  font-weight: 100; }
 body {
-  font-size: 1.6rem; }
+  font-family: "BrownPro";
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  letter-spacing: 0rem; }
+
+h1 {
+  font-size: 7.2rem;
+  line-height: 7.8rem;
+  letter-spacing: -0.18rem; }
+
+h2 {
+  font-size: 4.6rem;
+  line-height: 6.2rem;
+  letter-spacing: -0.12rem; }
+
+h3 {
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.129rem; }
+
+h4 {
+  font-size: 2.8rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.1rem; }
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0rem; }
+
+h6 {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  letter-spacing: 0rem; }
+
+h7 {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  letter-spacing: 0rem; }
+
+.caps {
+  font-size: 1.3rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.16rem; }
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0rem; }
+
+button,
+a.button,
+input[type=submit] {
+  padding: 0;
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+  min-width: 158px; }
+  button:hover,
+  a.button:hover,
+  input[type=submit]:hover {
+    text-decoration: none; }
+  button.min-width-168,
+  a.button.min-width-168,
+  input[type=submit].min-width-168 {
+    min-width: 168px; }
+  button.min-width-208,
+  a.button.min-width-208,
+  input[type=submit].min-width-208 {
+    min-width: 208px; }
+
+body {
+  color: #69757d; }
+
+h1 {
+  color: #2a3a46; }
+  h1.blue-1 {
+    color: #4a90e2; }
+  h1.white {
+    color: #ffffff; }
+
+h2 {
+  color: #2a3a46; }
+  h2.white {
+    color: #ffffff; }
+
+h3 {
+  color: #2a3a46; }
+
+h4 {
+  color: #2a3a46; }
+  h4.white {
+    color: #ffffff; }
+  h4.black-3 {
+    color: #69757d; }
+
+h5 {
+  color: #2a3a46; }
+  h5.white {
+    color: #ffffff; }
+  h5.black-3 {
+    color: #69757d; }
+
+h6 {
+  color: #2a3a46; }
+  h6.white {
+    color: #ffffff; }
+  h6.black-3 {
+    color: #69757d; }
+
+h7 {
+  color: #2a3a46; }
+
+.caps {
+  color: #4a90e2; }
+  .caps.black-4 {
+    color: #b4babe; }
+  .caps.white {
+    color: #ffffff; }
+
+button,
+a.button,
+input[type=submit] {
+  color: #ffffff;
+  background-color: #ff5657; }
+  button:hover,
+  a.button:hover,
+  input[type=submit]:hover {
+    color: #ffffff;
+    background-color: #ff5657; }
+
+a {
+  color: #2a3a46; }
+  a:hover {
+    color: #2a3a46; }
 
 /*# sourceMappingURL=ifx-2021.css.map */
