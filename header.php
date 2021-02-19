@@ -21,6 +21,8 @@ $themeURL = get_template_directory_uri();
 			echo '<header>';
 			echo '<nav class="navbar navbar-expand-lg" role="navigation">';
 			echo '<div class="container">';
+			echo '<div class="row">';
+			echo '<div class="col-12">';
 			echo '<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false">';
 			echo '<span class="sr-only">Toggle navigation</span>';
 			echo '<span class="icon-bar top-bar"></span>';
@@ -39,6 +41,8 @@ $themeURL = get_template_directory_uri();
 					'walker'          => new WP_Bootstrap_Navwalker(),
 				)
 			);
+			echo '</div>';
+			echo '</div>';
 			echo '</div>';
 			echo '</header>';
 			?>
