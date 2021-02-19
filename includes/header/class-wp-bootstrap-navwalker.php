@@ -225,9 +225,12 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 
 				$atts['href'] = ! empty( $item->url ) ? $item->url : '#';
 				// For items in dropdowns use .dropdown-item instead of .nav-link.
+				// Modified Walker to register variable depending on if menu item is in dropdown or not
 				if ( $depth > 0 ) {
+					$nav_item = 'dropdown';
 					$atts['class'] = 'dropdown-item';
 				} else {
+					$nav_item = 'main';
 					$atts['class'] = 'nav-link';
 				}
 			}
@@ -295,7 +298,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 
 			
 			// Modifying Walker to show description
-			if ($item->description) {
+			if ($item->description && $nav_item == 'dropdown') {
 				$title .= '<div class="desc">' . $item->description . '</div>';
 			}
 			
