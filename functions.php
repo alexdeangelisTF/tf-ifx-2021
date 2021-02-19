@@ -2,6 +2,7 @@
 // Register Menus
 function register_menus() {
 	register_nav_menu('main-menu',__( 'Main Menu' ));
+	register_nav_menu('main-menu-right',__( 'Main Menu - Right' ));
 }
 add_action( 'init', 'register_menus' );
 
