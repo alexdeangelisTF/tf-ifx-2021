@@ -1,7 +1,7 @@
 <?php
 
 get_header();
-
+echo '<section>';
 echo '<div class="container">';
 echo '<div class="row">';
 echo '<div class="col-12">';
@@ -25,7 +25,7 @@ echo '<input type="submit" value="This is a submit input">';
 echo '</div>';
 echo '</div>';
 echo '</div>';
-
+echo '</section>';
 get_footer();
 
 ?>
