@@ -47,3 +47,11 @@ $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     __FILE__,
     'tf-ifx-2021'
 );
+
+/**
+ * Register Custom Navigation Walker
+ */
+function register_navwalker(){
+	require_once get_template_directory() . '/includes/header/class-wp-bootstrap-navwalker.php';
+}
+add_action( 'after_setup_theme', 'register_navwalker' );
