@@ -121,8 +121,8 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) :
 
 			if ( false !== strpos( $args->items_wrap, 'itemscope' ) && false === $this->has_schema ) {
 				$this->has_schema  = true;
-				$args->link_before = '<span itemprop="name">' . $args->link_before;
-				$args->link_after .= '</span>';
+				$args->link_before = '<div class="item-name" itemprop="name">' . $args->link_before;
+				$args->link_after .= '</div>';
 			}
 
 			$classes = empty( $item->classes ) ? array() : (array) $item->classes;
