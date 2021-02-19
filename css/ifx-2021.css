@@ -75,26 +75,35 @@ p {
 
 button,
 a.button,
-input[type=submit] {
-  padding: 0;
+input[type=submit],
+.navbar-expand-lg .navbar-nav li.button a.nav-link {
   border: none;
   display: inline-block;
   background-color: transparent;
   border-radius: 0.4rem;
-  padding: 1.2rem;
-  min-width: 158px; }
+  padding: 1rem 1.2rem;
+  min-width: 158px;
+  text-align: center;
+  margin-right: 1rem; }
   button:hover,
   a.button:hover,
-  input[type=submit]:hover {
+  input[type=submit]:hover,
+  .navbar-expand-lg .navbar-nav li.button a.nav-link:hover {
     text-decoration: none; }
   button.min-width-168,
   a.button.min-width-168,
-  input[type=submit].min-width-168 {
+  input[type=submit].min-width-168,
+  .navbar-expand-lg .navbar-nav li.button a.nav-link.min-width-168 {
     min-width: 168px; }
   button.min-width-208,
   a.button.min-width-208,
-  input[type=submit].min-width-208 {
+  input[type=submit].min-width-208,
+  .navbar-expand-lg .navbar-nav li.button a.nav-link.min-width-208 {
     min-width: 208px; }
+
+.navbar-expand-lg .navbar-nav li.button a.nav-link {
+  min-width: 114px;
+  margin-right: 0; }
 
 body {
   color: #69757d; }
@@ -147,20 +156,31 @@ h7 {
 
 button,
 a.button,
-input[type=submit] {
+input[type=submit],
+.navbar-expand-lg .navbar-nav li.button a.nav-link {
   color: #ffffff;
   background-color: #ff5657; }
   button:hover,
   a.button:hover,
-  input[type=submit]:hover {
+  input[type=submit]:hover,
+  .navbar-expand-lg .navbar-nav li.button a.nav-link:hover {
     color: #ffffff;
     background-color: #ff5657; }
+
+.navbar-expand-lg .navbar-nav li.button.white a.nav-link {
+  color: #2a3a46;
+  background-color: #fafcfe; }
+.navbar-expand-lg .navbar-nav li.button.blue a.nav-link {
+  color: #ffffff;
+  background-color: #4a90e2; }
 
 a {
   color: #2a3a46; }
   a:hover {
     color: #2a3a46; }
 
+header .container .row {
+  width: 100%; }
 header ul li a {
   font-weight: 700;
   color: #222222; }
@@ -210,6 +230,7 @@ header ul li ul li a .item-name {
     line-height: 1;
     padding-top: 0.5rem; }
 header .navbar-toggler {
+  width: 100%;
   border: none;
   background: transparent !important; }
   header .navbar-toggler .icon-bar {
@@ -250,6 +271,12 @@ header .navbar-toggler {
         white-space: nowrap;
         padding: 1.4rem 3rem; }
     header ul li a.dropdown-toggle:after {
-      display: none; } }
+      display: none; }
+    header ul li:last-child {
+      margin-right: 0; }
+  header .ifx-right-menu ul li {
+    margin-right: 2.2rem; }
+    header .ifx-right-menu ul li:last-child {
+      margin-right: 0; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
