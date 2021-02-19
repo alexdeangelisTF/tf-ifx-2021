@@ -285,5 +285,19 @@ header .navbar-toggler {
     margin-right: 2.2rem; }
     header .ifx-right-menu ul li:last-child {
       margin-right: 0; } }
+footer {
+  background-color: #fafcfe;
+  padding: 6.4rem 0; }
+  footer ul {
+    padding: 0; }
+    footer ul li {
+      list-style-type: none; }
+      footer ul li a {
+        color: #69757d; }
+        footer ul li a:hover {
+          text-decoration: none; }
+  footer h5 {
+    font-weight: bold;
+    margin-bottom: 2.3rem; }
 
 /*# sourceMappingURL=ifx-2021.css.map */
