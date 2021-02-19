@@ -1,3 +1,10 @@
+@media (min-width: 1440px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1440px; } }
 /* Default browser size is 16px.
 :root font-size: 62.5% sets the browser font at 10px.
 Then body font-size: 1.6rem sets the font of the body back to 16px
