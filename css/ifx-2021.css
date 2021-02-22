@@ -423,14 +423,15 @@ footer {
       justify-content: flex-start; }
     footer .logo {
       margin-bottom: 0; } }
+.default-background {
+  background-image: linear-gradient(15deg, #ffffff 31%, #ebf1fa 96%, #ebf1fa 96%);
+  height: 1024px;
+  position: absolute;
+  z-index: 1;
+  width: 100%; }
+
 div#main {
   position: relative; }
-  div#main .default-background {
-    background-image: linear-gradient(15deg, #ffffff 31%, #ebf1fa 96%, #ebf1fa 96%);
-    height: 1024px;
-    position: absolute;
-    z-index: 1;
-    width: 100%; }
   div#main section {
     position: relative;
     z-index: 2; }
