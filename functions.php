@@ -25,6 +25,8 @@ function your_scripts() {
 	wp_enqueue_style( 'ifx-2021-styles', get_stylesheet_directory_uri() . '/css/ifx-2021.css', array(), '1.0.13' );
 	/*Bootstrap JS*/
 	wp_enqueue_script('bootstrap-js-bundle', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js', array('jquery'), null, true);
+	/* IFX 2021 JS */
+  wp_enqueue_script('ifx-2021-js', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'your_scripts' );
 
