@@ -4,7 +4,7 @@ get_header();
 
 echo '<div id="main">';
 
-echo '<div class="background-gradient">';
+echo '<div class="default-background">';
 echo '</div>';
 
 
