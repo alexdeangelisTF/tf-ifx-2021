@@ -32,6 +32,25 @@ foreach($menus as $menu) {
 echo '</div>';
 echo '</div>';
 echo '</div>';
+
+echo '<div class="row">';
+echo '<div class="col-6">';
+echo '<div class="copyright">';
+echo '<h6 class="black-3">';
+echo '&copy; ' . date("Y") . ' IFX (UK) Ltd';
+echo '</h6>';
+echo '</div>';
+echo '</div>';
+echo '<div class="col-6">';
+echo '<div class="row">';
+echo '<div class="col-12 col-lg-4 offset-lg-8">';
+// Include Social part
+include __DIR__ . '/includes/footer/social.php';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+
 echo '</div>';
 echo '</footer>';
 
