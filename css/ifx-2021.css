@@ -277,6 +277,8 @@ header {
   position: relative; }
   header nav {
     background-color: #ebf1fa; }
+    header nav .menu-wrapper {
+      width: 100%; }
   header ul li a {
     font-weight: 700;
     color: #222222; }

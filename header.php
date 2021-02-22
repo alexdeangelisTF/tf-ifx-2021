@@ -35,8 +35,8 @@ $themeURL = get_template_directory_uri();
 			echo '<span class="icon-bar bottom-bar"></span>';
 			echo '</button>';
 			echo '</div>';
-			echo '<div class="row">';
-			echo '<div class="col-12 d-lg-flex justify-content-lg-between align-content-lg-center collapse navbar-collapse" id="ifx-navbar-collapse">';
+			echo '<div class="menu-wrapper">';
+			echo '<div class="d-lg-flex justify-content-lg-between align-content-lg-center collapse navbar-collapse" id="ifx-navbar-collapse">';
 			echo '<div class="ifx-main-menu d-lg-flex">';
 			wp_nav_menu( 
 				array(
