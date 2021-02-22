@@ -21,12 +21,21 @@ $themeURL = get_template_directory_uri();
 			echo '<header>';
 			echo '<nav class="navbar navbar-expand-lg" role="navigation">';
 			echo '<div class="container">';
+			echo '<div class="mobile-header d-lg-none">';
+			// Hide this logo on desktop
+			echo '<div class="logo d-lg-none">';
+			echo '<a href="' . get_site_url() . '">';
+			echo '<img src="https://via.placeholder.com/44x50">';
+			echo '</a>';
+			echo '</div>';
 			echo '<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#ifx-navbar-collapse" aria-controls="bs-example-navbar-collapse" aria-expanded="false">';
-			echo '<span class="sr-only">Toggle navigation</span>';
+			/*echo '<span class="sr-only">Toggle navigation</span>';
 			echo '<span class="icon-bar top-bar"></span>';
 			echo '<span class="icon-bar middle-bar"></span>';
-			echo '<span class="icon-bar bottom-bar"></span>';
+			echo '<span class="icon-bar bottom-bar"></span>';*/
+			echo '<i class="fas fa-bars"></i>';
 			echo '</button>';
+			echo '</div>';
 			echo '<div class="row">';
 			echo '<div class="col-12 d-lg-flex justify-content-lg-between align-content-lg-center collapse navbar-collapse" id="ifx-navbar-collapse">';
 			echo '<div class="ifx-main-menu d-lg-flex">';
@@ -42,6 +51,12 @@ $themeURL = get_template_directory_uri();
 					'walker'          => new WP_Bootstrap_Navwalker(),
 				)
 			);
+			echo '</div>';
+			// Hide this logo on mobile/tablet
+			echo '<div class="logo d-none d-lg-block">';
+			echo '<a href="' . get_site_url() . '">';
+			echo '<img src="https://via.placeholder.com/44x50">';
+			echo '</a>';
 			echo '</div>';
 			echo '<div class="ifx-right-menu">';
 			wp_nav_menu( 
