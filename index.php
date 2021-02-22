@@ -1,6 +1,13 @@
 <?php
 
 get_header();
+
+echo '<div id="main">';
+
+echo '<div class="background-gradient">';
+echo '</div>';
+
+
 echo '<section>';
 echo '<div class="container">';
 echo '<div class="row">';
@@ -26,6 +33,13 @@ echo '</div>';
 echo '</div>';
 echo '</div>';
 echo '</section>';
+
+
+
+
+echo '</div>';
+
+
 get_footer();
 
 ?>
