@@ -262,7 +262,8 @@ header {
     padding: 0.5rem 0;
     border: none;
     border-radius: 0.8rem;
-    background-color: transparent; }
+    background-color: transparent;
+    margin-top: 0; }
     header ul li ul.dropdown-menu:before, header ul li ul.dropdown-menu:after {
       bottom: 100%;
       left: 20%;
