@@ -170,7 +170,7 @@ p {
 button,
 a.button,
 input[type=submit],
-.navbar-expand-lg .navbar-nav li.button a.nav-link {
+.navbar-nav li.button a.nav-link {
   border: none;
   display: inline-block;
   background-color: transparent;
@@ -182,20 +182,20 @@ input[type=submit],
   button:hover,
   a.button:hover,
   input[type=submit]:hover,
-  .navbar-expand-lg .navbar-nav li.button a.nav-link:hover {
+  .navbar-nav li.button a.nav-link:hover {
     text-decoration: none; }
   button.min-width-168,
   a.button.min-width-168,
   input[type=submit].min-width-168,
-  .navbar-expand-lg .navbar-nav li.button a.nav-link.min-width-168 {
+  .navbar-nav li.button a.nav-link.min-width-168 {
     min-width: 168px; }
   button.min-width-208,
   a.button.min-width-208,
   input[type=submit].min-width-208,
-  .navbar-expand-lg .navbar-nav li.button a.nav-link.min-width-208 {
+  .navbar-nav li.button a.nav-link.min-width-208 {
     min-width: 208px; }
 
-.navbar-expand-lg .navbar-nav li.button a.nav-link {
+.navbar-nav li.button a.nav-link {
   min-width: 114px;
   margin-right: 0; }
 
@@ -251,20 +251,20 @@ h7 {
 button,
 a.button,
 input[type=submit],
-.navbar-expand-lg .navbar-nav li.button a.nav-link {
+.navbar-nav li.button a.nav-link {
   color: #ffffff;
   background-color: #ff5657; }
   button:hover,
   a.button:hover,
   input[type=submit]:hover,
-  .navbar-expand-lg .navbar-nav li.button a.nav-link:hover {
+  .navbar-nav li.button a.nav-link:hover {
     color: #ffffff;
     background-color: #ff5657; }
 
-.navbar-expand-lg .navbar-nav li.button.white a.nav-link {
+.navbar-nav li.button.white a.nav-link {
   color: #2a3a46;
   background-color: #fafcfe; }
-.navbar-expand-lg .navbar-nav li.button.blue a.nav-link {
+.navbar-nav li.button.blue a.nav-link {
   color: #ffffff;
   background-color: #4a90e2; }
 
@@ -275,8 +275,6 @@ a {
 
 header {
   position: relative; }
-  header .container .row {
-    width: 100%; }
   header nav {
     background-color: #ebf1fa; }
   header ul li a {
@@ -376,11 +374,13 @@ header {
         font-size: 2rem; }
 
 @media (min-width: 992px) {
-  header nav.navbar {
-    position: absolute;
+  header nav {
+    position: absolute !important;
     width: 100%;
     z-index: 3;
     background-color: transparent; }
+    header nav .row {
+      width: 100%; }
   header ul li {
     margin-right: 6rem; }
     header ul li ul.dropdown-menu {
@@ -449,6 +449,8 @@ footer {
       padding-top: 5.5rem; }
     footer .social {
       justify-content: flex-start; }
+      footer .social .icon {
+        text-align: left; }
     footer .logo {
       margin-bottom: 0; } }
 .default-background {
@@ -465,5 +467,8 @@ div#main {
     z-index: 2; }
     div#main section:first-of-type {
       padding-top: 6rem; }
+
+.ifx-row-hero h5 {
+  color: #69757d; }
 
 /*# sourceMappingURL=ifx-2021.css.map */
