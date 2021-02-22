@@ -358,6 +358,8 @@ header .mobile-header {
     header .ifx-right-menu ul li:last-child {
       margin-right: 0; } }
 footer {
+  position: relative;
+  z-index: 2;
   background-color: #fafcfe;
   padding: 6.4rem 0 1.7rem; }
   footer .row:nth-child(2) {
