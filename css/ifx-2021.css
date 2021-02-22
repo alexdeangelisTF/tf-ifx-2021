@@ -40,9 +40,9 @@ body {
   letter-spacing: 0rem; }
 
 h1 {
-  font-size: 7.2rem;
-  line-height: 7.8rem;
-  letter-spacing: -0.18rem;
+  font-size: 3.6rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.129rem;
   font-weight: 400; }
   h1.weight-100 {
     font-weight: 100; }
@@ -51,10 +51,15 @@ h1 {
   h1.weight-700 {
     font-weight: 700; }
 
+@media (min-width: 768px) {
+  h1 {
+    font-size: 7.2rem;
+    line-height: 7.8rem;
+    letter-spacing: -0.18rem; } }
 h2 {
-  font-size: 4.6rem;
-  line-height: 6.2rem;
-  letter-spacing: -0.12rem;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.1rem;
   font-weight: 400; }
   h2.weight-100 {
     font-weight: 100; }
@@ -63,10 +68,15 @@ h2 {
   h2.weight-700 {
     font-weight: 700; }
 
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4.6rem;
+    line-height: 6.2rem;
+    letter-spacing: -0.12rem; } }
 h3 {
-  font-size: 3.6rem;
-  line-height: 4.8rem;
-  letter-spacing: -0.129rem;
+  font-size: 2.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0;
   font-weight: 400; }
   h3.weight-100 {
     font-weight: 100; }
@@ -75,10 +85,15 @@ h3 {
   h3.weight-700 {
     font-weight: 700; }
 
+@media (min-width: 768px) {
+  h3 {
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.129rem; } }
 h4 {
-  font-size: 2.8rem;
-  line-height: 4.8rem;
-  letter-spacing: -0.1rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  letter-spacing: 0;
   font-weight: 400; }
   h4.weight-100 {
     font-weight: 100; }
@@ -87,9 +102,14 @@ h4 {
   h4.weight-700 {
     font-weight: 700; }
 
+@media (min-width: 768px) {
+  h4 {
+    font-size: 2.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -0.1rem; } }
 h5 {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   letter-spacing: 0rem;
   font-weight: 400; }
   h5.weight-100 {
@@ -99,6 +119,10 @@ h5 {
   h5.weight-700 {
     font-weight: 700; }
 
+@media (min-width: 768px) {
+  h5 {
+    font-size: 1.8rem;
+    line-height: 2.8rem; } }
 h6 {
   font-size: 1.6rem;
   line-height: 2.8rem;
@@ -129,7 +153,7 @@ h7 {
   letter-spacing: 0.16rem; }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.8rem;
   letter-spacing: 0rem;
   font-weight: 400; }
@@ -140,6 +164,9 @@ p {
   p.weight-700 {
     font-weight: 700; }
 
+@media (min-width: 768px) {
+  p {
+    font-size: 1.8rem; } }
 button,
 a.button,
 input[type=submit],
