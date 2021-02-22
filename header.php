@@ -29,11 +29,10 @@ $themeURL = get_template_directory_uri();
 			echo '</a>';
 			echo '</div>';
 			echo '<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#ifx-navbar-collapse" aria-controls="bs-example-navbar-collapse" aria-expanded="false">';
-			/*echo '<span class="sr-only">Toggle navigation</span>';
+			echo '<span class="sr-only">Toggle navigation</span>';
 			echo '<span class="icon-bar top-bar"></span>';
 			echo '<span class="icon-bar middle-bar"></span>';
-			echo '<span class="icon-bar bottom-bar"></span>';*/
-			echo '<i class="fas fa-bars"></i>';
+			echo '<span class="icon-bar bottom-bar"></span>';
 			echo '</button>';
 			echo '</div>';
 			echo '<div class="row">';
