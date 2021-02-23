@@ -1,5 +1,8 @@
 <?php
 
+echo '<div class="background-shape">';
+echo '</div>';
+
 $heading = get_sub_field('heading');
 $preheading = get_sub_field('preheading');
 $introductionText = get_sub_field('introduction_text');

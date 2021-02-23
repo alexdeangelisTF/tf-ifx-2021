@@ -541,7 +541,13 @@ div#main {
     position: relative;
     bottom: 30rem; }
   .ifx-row-feature_tiles .feature-tiles__introduction {
-    padding-bottom: 13rem; } }
+    padding-bottom: 13rem; }
+  .ifx-row-feature_tiles .background-shape {
+    background-color: #fafcfe;
+    position: absolute;
+    width: 60%;
+    min-height: 90%;
+    max-height: 3000px; } }
 @media (max-width: 767px) {
   .ifx-row-feature_tiles .col-12:last-child .feature-tile {
     margin-bottom: 0; } }
