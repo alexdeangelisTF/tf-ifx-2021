@@ -6,8 +6,10 @@ if( have_rows('ifx_flexible_rows') ) {
 		$rowType = get_row_layout();
 		echo '<section>';
 		echo '<div class="ifx-row ifx-row-' . $rowType . '">';
-		if( $rowType == 'hero' ) {
+		if ( $rowType == 'hero' ) {
 			include __DIR__ . '/rows/hero.php';
+		} elseif ( $rowType == 'image_text' ) {
+			include __DIR__ . '/rows/image-text.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
