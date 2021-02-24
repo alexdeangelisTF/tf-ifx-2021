@@ -556,5 +556,10 @@ div#main {
 @media (max-width: 767px) {
   .ifx-row-feature_tiles .col-12:last-child .feature-tile {
     margin-bottom: 0; } }
+.ifx-row-html .html__wrapper {
+  border-radius: 1rem;
+  box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+  background-color: #ffffff;
+  padding: 0.7rem 1.6rem; }
 
 /*# sourceMappingURL=ifx-2021.css.map */
