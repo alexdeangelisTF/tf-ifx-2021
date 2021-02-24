@@ -576,7 +576,8 @@ div#main {
     text-align: center;
     width: 50%; }
     .ifx-row-logo_gallery .logo-gallery__wrapper .logo-gallery__single img {
-      max-width: 160px; }
+      max-width: 160px;
+      width: 100%; }
 
 @media (min-width: 768px) {
   .ifx-row-logo_gallery .logo-gallery__wrapper .logo-gallery__single {

@@ -33,6 +33,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/feature-tiles.php';
 		} elseif ( $rowType == 'html' ) {
 			include __DIR__ . '/rows/html.php';
+		} elseif ( $rowType == 'logo_gallery' ) {
+			include __DIR__ . '/rows/logo-gallery.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
