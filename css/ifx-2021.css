@@ -471,7 +471,8 @@ div#main {
     div#main section:first-of-type {
       /*padding-top:1.5rem;*/ }
     div#main section .ifx-row .ifx-row-wrapper {
-      padding: 3rem 0; }
+      padding: 3rem 0;
+      background-repeat: no-repeat; }
 
 @media (min-width: 992px) {
   div#main section:first-of-type {

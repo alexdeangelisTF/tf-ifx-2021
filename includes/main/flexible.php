@@ -12,6 +12,11 @@ if( have_rows('ifx_flexible_rows') ) {
 		if ($customPadding) {
 			include __DIR__ . '/custom-padding.php';
 		}
+		// Check for custom background
+		$customBackground = get_sub_field('custom_background');
+		if ($customBackground) {
+			include __DIR__ . '/custom-background.php';
+		}
 		if ( $rowType == 'hero' ) {
 			include __DIR__ . '/rows/hero.php';
 		} elseif ( $rowType == 'image_text' ) {
