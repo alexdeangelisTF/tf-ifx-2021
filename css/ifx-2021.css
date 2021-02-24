@@ -585,5 +585,22 @@ div#main {
 @media (min-width: 1200px) {
   .ifx-row-logo_gallery .logo-gallery__wrapper .logo-gallery__single {
     width: 16.666%; } }
+.ifx-row-icon_text .icon-text__wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .ifx-row-icon_text .icon-text__wrapper .icon-text__single {
+    padding-right: 0; }
+    .ifx-row-icon_text .icon-text__wrapper .icon-text__single .icon-text__single__icon img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain; }
+    .ifx-row-icon_text .icon-text__wrapper .icon-text__single .icon-text__single__heading h4 {
+      margin-bottom: 1.5rem; }
+
+@media (min-width: 1200px) {
+  .ifx-row-icon_text .icon-text__wrapper {
+    flex-wrap: nowrap; }
+    .ifx-row-icon_text .icon-text__wrapper .icon-text__single {
+      padding-right: 5rem; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
