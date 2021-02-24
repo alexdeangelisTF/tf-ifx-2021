@@ -6,7 +6,7 @@ echo '<div class="row">';
 echo '<div class="col-12 col-lg-4">';
 echo '<div class="logo">';
 echo '<a href="' . get_site_url() . '">';
-echo '<img src="https://via.placeholder.com/88x108">';
+echo '<img src="' . get_template_directory_uri() . '/img/ifx-logo-footer.svg">';
 echo '</a>';
 echo '</div>';
 echo '</div>';
