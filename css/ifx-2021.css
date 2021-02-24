@@ -620,5 +620,48 @@ div#main {
     line-height: 1.8rem;
     letter-spacing: 0;
     margin-top: 1.5rem; } }
+.ifx-row-tiles .tiles__introduction {
+  padding-bottom: 7.9rem;
+  text-align: center; }
+  .ifx-row-tiles .tiles__introduction p {
+    color: #69757d; }
+    .ifx-row-tiles .tiles__introduction p strong {
+      color: #4a90e2; }
+  .ifx-row-tiles .tiles__introduction .caps {
+    padding-bottom: 0.9rem; }
+.ifx-row-tiles .tile {
+  box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+  border-radius: 0.8rem;
+  padding: 4.8rem 4.4rem;
+  background-color: #ffffff;
+  margin-bottom: 2.4rem; }
+  .ifx-row-tiles .tile h6 {
+    margin: 0; }
+  .ifx-row-tiles .tile h3 {
+    margin-bottom: 1rem; }
+  .ifx-row-tiles .tile .tile__image {
+    margin-bottom: 1rem; }
+    .ifx-row-tiles .tile .tile__image img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover; }
+
+@media (min-width: 992px) {
+  .ifx-row-tiles .tiles__introduction .caps {
+    padding-bottom: 2.2rem; } }
+@media (max-width: 991px) {
+  .ifx-row-tiles .tiles__wrapper .tiles__introduction {
+    padding-bottom: 3rem; }
+  .ifx-row-tiles .tiles__wrapper .tile {
+    padding: 2.4rem 1.6rem; }
+    .ifx-row-tiles .tiles__wrapper .tile h4 {
+      font-size: 2.2rem;
+      line-height: 1.8rem;
+      letter-spacing: 0;
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem; } }
+@media (max-width: 767px) {
+  .ifx-row-tiles .tiles__wrapper .tiles__introduction {
+    text-align: left; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */

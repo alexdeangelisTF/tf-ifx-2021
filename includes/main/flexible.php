@@ -37,6 +37,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/logo-gallery.php';
 		} elseif ( $rowType == 'icon_text' ) {
 			include __DIR__ . '/rows/icon-text.php';
+		} elseif ( $rowType == 'tiles' ) {
+			include __DIR__ . '/rows/tiles.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
