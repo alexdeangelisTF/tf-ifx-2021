@@ -663,5 +663,25 @@ div#main {
 @media (max-width: 767px) {
   .ifx-row-tiles .tiles__wrapper .tiles__introduction {
     text-align: left; } }
+.ifx-row-faqs .faqs__introduction {
+  padding-bottom: 6.2rem;
+  text-align: left; }
+  .ifx-row-faqs .faqs__introduction h2 {
+    margin-bottom: 3.5rem; }
+  .ifx-row-faqs .faqs__introduction .caps {
+    padding-bottom: 0.9rem; }
+.ifx-row-faqs .faqs__questions h5 {
+  margin: 0; }
+
+@media (min-width: 992px) {
+  .ifx-row-faqs .faqs__introduction {
+    text-align: center; }
+    .ifx-row-faqs .faqs__introduction h2 {
+      margin-bottom: 4rem; }
+    .ifx-row-faqs .faqs__introduction .caps {
+      padding-bottom: 2.2rem; } }
+@media (min-width: 768px) {
+  .ifx-row-faqs .faqs__introduction {
+    text-align: center; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
