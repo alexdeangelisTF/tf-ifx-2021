@@ -20,7 +20,7 @@ if ($columns) {
 		}
 		if ($column['heading']){
 			echo '<div class="icon-text__single__heading">';
-			echo '<h4 class="h1-991">' . $column['heading'] . '</h4>';
+			echo '<h4>' . $column['heading'] . '</h4>';
 			echo '</div>';
 		}
 		if ($column['text']){
