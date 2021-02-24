@@ -8,12 +8,13 @@ echo '<div class="col-12">';
 
 echo '<div class="logo-gallery__wrapper">';
 
-//var_dump();
 $imageGallery = get_sub_field('image_gallery');
-foreach( $imageGallery as $imageID) {
-	echo '<div class="logo-gallery__single">';
-	echo wp_get_attachment_image($imageID, 'large');
-	echo '</div>';
+if ($imageGallery) {
+	foreach( $imageGallery as $imageID) {
+		echo '<div class="logo-gallery__single">';
+		echo wp_get_attachment_image($imageID, 'large');
+		echo '</div>';
+	}
 }
 
 echo '</div>';
