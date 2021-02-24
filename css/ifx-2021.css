@@ -663,15 +663,43 @@ div#main {
 @media (max-width: 767px) {
   .ifx-row-tiles .tiles__wrapper .tiles__introduction {
     text-align: left; } }
-.ifx-row-faqs .faqs__introduction {
-  padding-bottom: 6.2rem;
-  text-align: left; }
-  .ifx-row-faqs .faqs__introduction h2 {
-    margin-bottom: 3.5rem; }
-  .ifx-row-faqs .faqs__introduction .caps {
-    padding-bottom: 0.9rem; }
-.ifx-row-faqs .faqs__questions h5 {
-  margin: 0; }
+.ifx-row-faqs {
+  background-color: #fafcfe; }
+  .ifx-row-faqs .faqs__introduction {
+    padding-bottom: 6.2rem;
+    text-align: left; }
+    .ifx-row-faqs .faqs__introduction h2 {
+      margin-bottom: 3.5rem; }
+    .ifx-row-faqs .faqs__introduction .caps {
+      padding-bottom: 0.9rem; }
+  .ifx-row-faqs .faqs__questions .card {
+    margin-bottom: 2.4rem;
+    border: none;
+    box-shadow: 0 1px 1px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+    transition: all 0.5s;
+    border-radius: 0.4rem;
+    padding: 2.9rem 3.2rem; }
+    .ifx-row-faqs .faqs__questions .card .card-header {
+      background-color: #ffffff;
+      border: none;
+      padding: 0; }
+      .ifx-row-faqs .faqs__questions .card .card-header a:hover {
+        text-decoration: none; }
+      .ifx-row-faqs .faqs__questions .card .card-header a h5 {
+        margin: 0; }
+        .ifx-row-faqs .faqs__questions .card .card-header a h5 img {
+          transition: all 0.3s;
+          -ms-transform: rotate(-90deg);
+          /* IE 9 */
+          transform: rotate(-90deg);
+          width: 26px; }
+      .ifx-row-faqs .faqs__questions .card .card-header a:not(.collapsed) h5 img {
+        transition: all 0.3s;
+        -ms-transform: rotate(0deg);
+        /* IE 9 */
+        transform: rotate(0deg); }
+    .ifx-row-faqs .faqs__questions .card.open {
+      box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1); }
 
 @media (min-width: 992px) {
   .ifx-row-faqs .faqs__introduction {
