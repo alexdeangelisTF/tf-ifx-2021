@@ -6,6 +6,12 @@ if( have_rows('ifx_flexible_rows') ) {
 		$rowType = get_row_layout();
 		echo '<section>';
 		echo '<div class="ifx-row ifx-row-' . $rowType . ' ifx-row-' . $rowCount . '">';
+		
+		// Check for custom padding
+		$customPadding = get_sub_field('custom_padding');
+		if ($customPadding) {
+			include __DIR__ . '/custom-padding.php';
+		}
 		if ( $rowType == 'hero' ) {
 			include __DIR__ . '/rows/hero.php';
 		} elseif ( $rowType == 'image_text' ) {
