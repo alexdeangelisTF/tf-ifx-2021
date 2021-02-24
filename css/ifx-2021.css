@@ -470,10 +470,14 @@ div#main {
     z-index: 2; }
     div#main section:first-of-type {
       padding-top: 1.5rem; }
+    div#main section .ifx-row .ifx-row-wrapper {
+      padding: 3rem 0; }
 
 @media (min-width: 992px) {
   div#main section:first-of-type {
-    padding-top: 6rem; } }
+    padding-top: 6rem; }
+  div#main section .ifx-row .ifx-row-wrapper {
+    padding: 7.5rem 0; } }
 .ifx-row-hero h5 {
   color: #69757d; }
 
