@@ -562,4 +562,27 @@ div#main {
   background-color: #ffffff;
   padding: 0.7rem 1.6rem; }
 
+.ifx-row-logo_gallery .logo-gallery__wrapper {
+  border-radius: 1rem;
+  box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+  background-color: #ffffff;
+  padding: 0.7rem 1.6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .ifx-row-logo_gallery .logo-gallery__wrapper .logo-gallery__single {
+    padding: 1rem;
+    text-align: center;
+    width: 50%; }
+    .ifx-row-logo_gallery .logo-gallery__wrapper .logo-gallery__single img {
+      max-width: 160px; }
+
+@media (min-width: 768px) {
+  .ifx-row-logo_gallery .logo-gallery__wrapper .logo-gallery__single {
+    width: 33.33%; } }
+@media (min-width: 1200px) {
+  .ifx-row-logo_gallery .logo-gallery__wrapper .logo-gallery__single {
+    width: 16.666%; } }
+
 /*# sourceMappingURL=ifx-2021.css.map */
