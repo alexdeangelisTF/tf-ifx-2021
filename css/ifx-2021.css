@@ -469,7 +469,7 @@ div#main {
     position: relative;
     z-index: 2; }
     div#main section:first-of-type {
-      padding-top: 1.5rem; }
+      /*padding-top:1.5rem;*/ }
     div#main section .ifx-row .ifx-row-wrapper {
       padding: 3rem 0; }
 
