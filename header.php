@@ -25,7 +25,7 @@ $themeURL = get_template_directory_uri();
 			// Hide this logo on desktop
 			echo '<div class="logo d-lg-none">';
 			echo '<a href="' . get_site_url() . '">';
-			echo '<img src="https://via.placeholder.com/44x50">';
+			echo '<img src="' . $themeURL . '/img/ifx-logo.svg">';
 			echo '</a>';
 			echo '</div>';
 			echo '<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#ifx-navbar-collapse" aria-controls="bs-example-navbar-collapse" aria-expanded="false">';
@@ -54,7 +54,7 @@ $themeURL = get_template_directory_uri();
 			// Hide this logo on mobile/tablet
 			echo '<div class="logo d-none d-lg-block">';
 			echo '<a href="' . get_site_url() . '">';
-			echo '<img src="https://via.placeholder.com/44x50">';
+			echo '<img src="' . $themeURL . '/img/ifx-logo.svg">';
 			echo '</a>';
 			echo '</div>';
 			echo '<div class="ifx-right-menu">';
