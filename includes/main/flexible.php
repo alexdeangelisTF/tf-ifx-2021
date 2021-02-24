@@ -1,11 +1,11 @@
 <?php
-
+$rowCount = 1;
 if( have_rows('ifx_flexible_rows') ) {
 	while ( have_rows('ifx_flexible_rows') ) {
 		the_row();
 		$rowType = get_row_layout();
 		echo '<section>';
-		echo '<div class="ifx-row ifx-row-' . $rowType . '">';
+		echo '<div class="ifx-row ifx-row-' . $rowType . ' ifx-row-' . $rowCount . '">';
 		if ( $rowType == 'hero' ) {
 			include __DIR__ . '/rows/hero.php';
 		} elseif ( $rowType == 'image_text' ) {
@@ -15,5 +15,6 @@ if( have_rows('ifx_flexible_rows') ) {
 		} else {}
 		echo '</div>';
 		echo '</section>';
+		$rowCount++;
 	}
 }
