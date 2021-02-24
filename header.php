@@ -1,9 +1,3 @@
-<?php 
-
-$themeURL = get_template_directory_uri();
-
-?>
-
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
     <head>
@@ -25,7 +19,7 @@ $themeURL = get_template_directory_uri();
 			// Hide this logo on desktop
 			echo '<div class="logo d-lg-none">';
 			echo '<a href="' . get_site_url() . '">';
-			echo '<img src="' . $themeURL . '/img/ifx-logo.svg">';
+			echo '<img src="' . get_template_directory_uri() . '/img/ifx-logo.svg">';
 			echo '</a>';
 			echo '</div>';
 			echo '<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#ifx-navbar-collapse" aria-controls="bs-example-navbar-collapse" aria-expanded="false">';
