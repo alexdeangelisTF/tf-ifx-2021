@@ -48,7 +48,7 @@
 			// Hide this logo on mobile/tablet
 			echo '<div class="logo d-none d-lg-block">';
 			echo '<a href="' . get_site_url() . '">';
-			echo '<img src="' . $themeURL . '/img/ifx-logo.svg">';
+			echo '<img src="' . get_template_directory_uri() . '/img/ifx-logo.svg">';
 			echo '</a>';
 			echo '</div>';
 			echo '<div class="ifx-right-menu">';
