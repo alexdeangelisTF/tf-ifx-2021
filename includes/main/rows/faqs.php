@@ -15,7 +15,7 @@ echo '<div class="container">';
 echo '<div class="faqs__wrapper">';
 
 echo '<div class="row justify-content-center">';
-echo '<div class="col-12 col-lg-6">';
+echo '<div class="col-10 col-lg-6">';
 echo '<div class="faqs__introduction">';
 if ($preheading) {
 	echo '<div class="caps">';
