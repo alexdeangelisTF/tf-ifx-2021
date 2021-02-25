@@ -735,5 +735,20 @@ div#main {
 @media (min-width: 768px) {
   .ifx-row-contact_tiles .contact-tile .contact-tile__content {
     padding: 4.8rem 4.8rem 4rem; } }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper .row {
+  position: relative; }
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper .row .introduction-wrapper {
+    position: absolute;
+    right: 0;
+    display: flex;
+    height: 100%;
+    align-items: center; }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text__image {
+  background-size: cover;
+  background-position: center;
+  height: 619px; }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__introduction {
+  margin-bottom: 0;
+  background-color: #ffffff; }
 
 /*# sourceMappingURL=ifx-2021.css.map */
