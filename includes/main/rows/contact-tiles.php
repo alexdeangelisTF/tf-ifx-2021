@@ -13,8 +13,8 @@ if ($contactTiles) {
 	$colWidth = 12 / $contactTilesCount;
 	echo '<div class="row">';
 	foreach($contactTiles as $contactTile) {
-		echo '<div class="col-12 col-md-' . $colWidth . ' d-md-flex">';
-		echo '<div class="contact-tile d-md-flex flex-md-column">';
+		echo '<div class="col-12 col-lg-' . $colWidth . ' d-lg-flex">';
+		echo '<div class="contact-tile d-lg-flex flex-lg-column">';
 		echo '<div class="contact-tile__content flex-grow-1">';
 		if ($contactTile['image']) {
 			echo '<div class="contact-tile__image">';
