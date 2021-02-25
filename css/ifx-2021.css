@@ -151,8 +151,13 @@ h7 {
   font-size: 1.3rem;
   line-height: 2.8rem;
   letter-spacing: 0.16rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 0.9rem; }
 
+@media (min-width: 992px) {
+  .caps {
+    margin-bottom: 2.2rem; } }
 p {
   font-size: 1.6rem;
   line-height: 2.8rem;
@@ -505,8 +510,6 @@ div#main {
     color: #69757d; }
     .ifx-row-feature_tiles .feature-tiles__introduction p strong {
       color: #4a90e2; }
-  .ifx-row-feature_tiles .feature-tiles__introduction .caps {
-    padding-bottom: 0.9rem; }
   .ifx-row-feature_tiles .feature-tiles__introduction h2 {
     padding-bottom: 3rem; }
 .ifx-row-feature_tiles .feature-tile {
@@ -534,8 +537,6 @@ div#main {
       height: auto; }
 
 @media (min-width: 992px) {
-  .ifx-row-feature_tiles .feature-tiles__introduction .caps {
-    padding-bottom: 2.2rem; }
   .ifx-row-feature_tiles .feature-tiles__introduction h2 {
     padding-bottom: 3.5rem; }
   .ifx-row-feature_tiles .feature-tile {
@@ -627,8 +628,6 @@ div#main {
     color: #69757d; }
     .ifx-row-tiles .tiles__introduction p strong {
       color: #4a90e2; }
-  .ifx-row-tiles .tiles__introduction .caps {
-    padding-bottom: 0.9rem; }
 .ifx-row-tiles .tile {
   box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
   border-radius: 0.8rem;
@@ -646,9 +645,6 @@ div#main {
       height: 40px;
       object-fit: cover; }
 
-@media (min-width: 992px) {
-  .ifx-row-tiles .tiles__introduction .caps {
-    padding-bottom: 2.2rem; } }
 @media (max-width: 991px) {
   .ifx-row-tiles .tiles__wrapper .tiles__introduction {
     padding-bottom: 3rem; }
@@ -667,18 +663,16 @@ div#main {
   background-color: #fafcfe; }
   .ifx-row-faqs .faqs__introduction {
     padding-bottom: 6.2rem;
-    text-align: left; }
+    text-align: center; }
     .ifx-row-faqs .faqs__introduction h2 {
       margin-bottom: 3.5rem; }
-    .ifx-row-faqs .faqs__introduction .caps {
-      padding-bottom: 0.9rem; }
   .ifx-row-faqs .faqs__questions .card {
     margin-bottom: 2.4rem;
     border: none;
     box-shadow: 0 1px 1px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
     transition: all 0.5s;
     border-radius: 0.4rem;
-    padding: 2.9rem 3.2rem; }
+    padding: 2.2rem 1.6rem; }
     .ifx-row-faqs .faqs__questions .card .card-header {
       background-color: #ffffff;
       border: none;
@@ -698,18 +692,16 @@ div#main {
         -ms-transform: rotate(0deg);
         /* IE 9 */
         transform: rotate(0deg); }
+    .ifx-row-faqs .faqs__questions .card .card-body {
+      padding: 2.2rem 0 0; }
     .ifx-row-faqs .faqs__questions .card.open {
       box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1); }
 
 @media (min-width: 992px) {
-  .ifx-row-faqs .faqs__introduction {
-    text-align: center; }
-    .ifx-row-faqs .faqs__introduction h2 {
-      margin-bottom: 4rem; }
-    .ifx-row-faqs .faqs__introduction .caps {
-      padding-bottom: 2.2rem; } }
+  .ifx-row-faqs .faqs__introduction h2 {
+    margin-bottom: 4rem; } }
 @media (min-width: 768px) {
-  .ifx-row-faqs .faqs__introduction {
-    text-align: center; } }
+  .ifx-row-faqs .faqs__questions .card {
+    padding: 2.65rem 3.2rem; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
