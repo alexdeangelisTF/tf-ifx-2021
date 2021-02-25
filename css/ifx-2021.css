@@ -506,23 +506,14 @@ div#main {
 .ifx-row-hero h5 {
   color: #69757d; }
 
-.ifx-row-image_text .image-text__content__preheader {
-  padding-bottom: 0.9rem; }
-.ifx-row-image_text h2 {
-  padding-bottom: 3rem; }
 .ifx-row-image_text .button {
   margin-top: 2rem; }
+.ifx-row-image_text .image-text__introduction {
+  margin-bottom: 0; }
 
 @media (min-width: 992px) {
-  .ifx-row-image_text .image-text__content__preheader {
-    padding-bottom: 2.2rem; }
-  .ifx-row-image_text h2 {
-    padding-bottom: 3.5rem; }
   .ifx-row-image_text .button {
     margin-top: 4rem; } }
-@media (max-width: 991px) {
-  .ifx-row-image_text .image-text__image {
-    margin-bottom: 2rem; } }
 .ifx-row-feature_tiles .feature-tiles__introduction p {
   color: #69757d; }
   .ifx-row-feature_tiles .feature-tiles__introduction p strong {
