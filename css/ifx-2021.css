@@ -700,5 +700,8 @@ div#main {
 @media (min-width: 768px) {
   .ifx-row-faqs .faqs__questions .card {
     padding: 2.65rem 3.2rem; } }
+.ifx-row-full_screen_parallax .full-screen-parallax__wrapper {
+  background-position: center;
+  background-attachment: fixed; }
 
 /*# sourceMappingURL=ifx-2021.css.map */
