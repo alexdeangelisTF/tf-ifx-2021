@@ -714,9 +714,10 @@ div#main {
   background-color: #ffffff;
   padding: 0.8rem;
   border-radius: 0.8rem;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2.4rem; }
   .ifx-row-contact_tiles .contact-tile .contact-tile__content {
-    padding: 4.8rem 4.8rem 4rem; }
+    padding: 3rem 4.8rem 3rem; }
     .ifx-row-contact_tiles .contact-tile .contact-tile__content .contact-tile__image {
       margin-bottom: 1rem; }
       .ifx-row-contact_tiles .contact-tile .contact-tile__content .contact-tile__image img {
@@ -735,5 +736,14 @@ div#main {
   .ifx-row-contact_tiles .contact-tile .contact-tile__link a i {
     font-size: 1.5rem;
     margin-left: 0.4rem; }
+.ifx-row-contact_tiles .col-12:last-child .contact-tile {
+  margin-bottom: 0; }
+
+@media (min-width: 992px) {
+  .ifx-row-contact_tiles .contact-tile {
+    margin-bottom: 0; } }
+@media (min-width: 768px) {
+  .ifx-row-contact_tiles .contact-tile .contact-tile__content {
+    padding: 4.8rem 4.8rem 4rem; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
