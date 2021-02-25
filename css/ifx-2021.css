@@ -218,12 +218,16 @@ input[type=submit],
     margin-bottom: 2.5rem; }
   [class$="__introduction"] h5 {
     margin-bottom: 0; }
+  [class$="__introduction"] a.button {
+    margin-top: 2.4rem; }
 
 @media (min-width: 992px) {
   [class$="__introduction"] {
     margin-bottom: 7.5rem; }
     [class$="__introduction"] h2 {
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem; }
+    [class$="__introduction"] a.button {
+      margin-top: 4rem; } }
 body {
   color: #69757d; }
 
@@ -506,14 +510,9 @@ div#main {
 .ifx-row-hero h5 {
   color: #69757d; }
 
-.ifx-row-image_text .button {
-  margin-top: 2rem; }
 .ifx-row-image_text .image-text__introduction {
   margin-bottom: 0; }
 
-@media (min-width: 992px) {
-  .ifx-row-image_text .button {
-    margin-top: 4rem; } }
 .ifx-row-feature_tiles .feature-tiles__introduction p {
   color: #69757d; }
   .ifx-row-feature_tiles .feature-tiles__introduction p strong {
