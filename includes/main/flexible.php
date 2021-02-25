@@ -43,6 +43,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/faqs.php';
 		} elseif ( $rowType == 'full_screen_parallax' ) {
 			include __DIR__ . '/rows/full-screen-parallax.php';
+		} elseif ( $rowType == 'contact_tiles' ) {
+			include __DIR__ . '/rows/contact-tiles.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
