@@ -751,4 +751,42 @@ div#main {
   margin-bottom: 0;
   background-color: #ffffff; }
 
+.ifx-row-purchase_example .purchase-example__single {
+  box-shadow: 0 10px 12px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+  margin-bottom: 3rem;
+  padding: 2.2rem 3.1rem; }
+  .ifx-row-purchase_example .purchase-example__single:last-child {
+    background-color: #fafcfe; }
+  .ifx-row-purchase_example .purchase-example__single .caps {
+    margin: 0; }
+  .ifx-row-purchase_example .purchase-example__single .purchase-example__single__price {
+    text-align: left; }
+    .ifx-row-purchase_example .purchase-example__single .purchase-example__single__price h3 {
+      margin-top: 1rem; }
+  .ifx-row-purchase_example .purchase-example__single .purchase-example__single__icon img {
+    width: 40px;
+    height: 40px; }
+  .ifx-row-purchase_example .purchase-example__single .purchase-example__single__heading {
+    margin: 1.2rem 0; }
+
+@media (min-width: 768px) {
+  .ifx-row-purchase_example .purchase-example__single .purchase-example__single__price {
+    text-align: right; }
+    .ifx-row-purchase_example .purchase-example__single .purchase-example__single__price h3 {
+      font-size: 1.8rem;
+      margin: 0;
+      line-height: 1; }
+  .ifx-row-purchase_example .purchase-example__single .purchase-example__single__heading {
+    margin: 0; }
+  .ifx-row-purchase_example .purchase-example__single .purchase-example__single__text h6 {
+    margin: 0; } }
+@media (min-width: 1200px) {
+  .ifx-row-purchase_example .purchase-example__single .purchase-example__single__price h3 {
+    font-size: 3.6rem; }
+  .ifx-row-purchase_example .purchase-example__single .caps {
+    line-height: 1;
+    margin-bottom: 0.5rem; }
+  .ifx-row-purchase_example .purchase-example__single h5 {
+    margin: 0; } }
+
 /*# sourceMappingURL=ifx-2021.css.map */
