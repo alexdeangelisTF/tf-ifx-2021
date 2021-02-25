@@ -45,6 +45,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/full-screen-parallax.php';
 		} elseif ( $rowType == 'contact_tiles' ) {
 			include __DIR__ . '/rows/contact-tiles.php';
+		} elseif ( $rowType == 'image_text_overlap' ) {
+			//include __DIR__ . '/rows/image-text-overlap.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
