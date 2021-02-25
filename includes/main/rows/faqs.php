@@ -67,7 +67,10 @@ if ($questions) {
 			// Accordion Header
 			echo '<div class="card-header" role="tab" id="headingOne' . $questionCount . '">';
 			echo $headerLink;
-			echo '<h5 class="weight-700 d-flex justify-content-between align-items-center">' . $questionText . ' <img src="' . get_template_directory_uri() . '/img/angle-down.svg" /></h5>';
+			echo '<h5 class="weight-700 d-flex justify-content-between align-items-center">';
+			echo $questionText;
+			echo ' <img src="' . get_template_directory_uri() . '/img/angle-down.svg" />';
+			echo '</h5>';
 			echo '</a>';
 			echo '</div>';
 			
