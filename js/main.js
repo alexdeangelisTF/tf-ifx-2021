@@ -1,5 +1,6 @@
 (function($) {
-	// Header Dropdown
+	
+	/* Header Dropdown */
 	// Do this when hovering over desktop menu dropdown
 	$('header ul li.dropdown').mouseover(function(){
 		$(this).addClass('show');
@@ -11,9 +12,8 @@
 		$(this).find('ul.dropdown-menu').removeClass('show');
 	});
 	
-	// FAQs
+	/* FAQs */
 	$('.ifx-row-faqs .card .card-header a').on('click',function() {
-		
 		
 		// On click of card
 		var card = $(this).parent().parent();
