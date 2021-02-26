@@ -49,6 +49,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			//include __DIR__ . '/rows/image-text-overlap.php';
 		} elseif ( $rowType == 'purchase_example' ) {
 			include __DIR__ . '/rows/purchase-example.php';
+		} elseif ( $rowType == 'form' ) {
+			include __DIR__ . '/rows/form.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
