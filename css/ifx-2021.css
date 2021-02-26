@@ -835,7 +835,7 @@ div#main {
         -moz-appearance: none;
         -o-appearance: none;
         appearance: none;
-        background-image: url("http://ifx2021.dev.cc/wp-content/themes/tf-ifx-2021/img/angle-down.svg");
+        background-image: url("/wp-content/themes/tf-ifx-2021/img/angle-down.svg");
         background-position: 98% center;
         background-repeat: no-repeat;
         outline: none;
