@@ -788,5 +788,82 @@ div#main {
     margin-bottom: 0.5rem; }
   .ifx-row-purchase_example .purchase-example__single h5 {
     margin: 0; } }
+.ifx-row-form .form__wrapper .form__single .gform_wrapper {
+  margin: 0; }
+  .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul .ifx-wrapper .ifx-sub-wrapper {
+    display: flex;
+    width: 100%;
+    flex: 1; }
+    .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul .ifx-wrapper .ifx-sub-wrapper li {
+      width: 114px; }
+      .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul .ifx-wrapper .ifx-sub-wrapper li:first-child {
+        display: flex;
+        width: auto; }
+        .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul .ifx-wrapper .ifx-sub-wrapper li:first-child .ginput_container {
+          width: 114px; }
+        .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul .ifx-wrapper .ifx-sub-wrapper li:first-child:after {
+          content: " to ";
+          position: relative;
+          top: 1.2rem;
+          margin: 0 1rem; }
+  .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li {
+    padding: 0;
+    margin: 0 0 2.4rem; }
+    .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container {
+      margin: 0; }
+      .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container input,
+      .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container input[type=text],
+      .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container textarea,
+      .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container select {
+        padding: 0;
+        margin: 0;
+        display: block;
+        line-height: 1.65;
+        border: 0.1rem solid #d9dcde;
+        border-radius: 0.4rem;
+        padding: 1.4rem 2rem;
+        width: 100%; }
+        .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container input:focus,
+        .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container input[type=text]:focus,
+        .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container textarea:focus,
+        .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container select:focus {
+          border: 0.1rem solid #69757d;
+          outline: none; }
+      .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container select {
+        color: #69757d;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        background-image: url("http://ifx2021.dev.cc/wp-content/themes/tf-ifx-2021/img/angle-down.svg");
+        background-position: 98% center;
+        background-repeat: no-repeat;
+        outline: none;
+        background-size: 25px; }
+    .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li:last-child {
+      margin: 0 0 4rem; }
+      .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li:last-child.field_description_below {
+        margin: 0 0 3.3rem; }
+    .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .gfield_description {
+      font-size: 1.6rem;
+      padding: 0;
+      margin: 2rem 0 0; }
+  .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_footer {
+    margin: 0;
+    padding: 0; }
+    .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_footer input[type=submit] {
+      min-width: 208px; }
+
+@media (min-width: 768px) {
+  .ifx-row-form .form__wrapper .form__single {
+    box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+    padding: 6.4rem 6rem; } }
+@media (min-width: 1200px) {
+  .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul .ifx-wrapper {
+    display: flex; }
+    .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul .ifx-wrapper .ifx-sub-wrapper {
+      margin-left: 2.2rem; }
+    .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul .ifx-wrapper .size-50 {
+      width: 50%; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
