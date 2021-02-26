@@ -33,4 +33,8 @@
 		
 	});
 	
+	/* Form Element Wrap */
+	$( ".ifx-wrap" ).wrapAll( "<div class='ifx-wrapper' />");
+	$( ".ifx-sub-wrap" ).wrapAll( "<div class='ifx-sub-wrapper' />");
+	
 })( jQuery );
