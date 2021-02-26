@@ -865,5 +865,39 @@ div#main {
       margin-left: 2.2rem; }
     .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul .ifx-wrapper .size-50 {
       width: 50%; } }
+.ifx-row-table {
+  background-color: #fafcfe; }
+  .ifx-row-table .table__wrapper .table__single {
+    box-shadow: 0 4px 8px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+    border-radius: 0.8rem; }
+    .ifx-row-table .table__wrapper .table__single a .table__row {
+      box-shadow: inset 0 -1px 0 0 #f7f8f8;
+      padding: 1.2rem 1.5rem;
+      background-color: transparent; }
+      .ifx-row-table .table__wrapper .table__single a .table__row .row {
+        position: relative; }
+        .ifx-row-table .table__wrapper .table__single a .table__row .row h6 {
+          margin: 0; }
+          .ifx-row-table .table__wrapper .table__single a .table__row .row h6.col2 {
+            color: #69757d; }
+        .ifx-row-table .table__wrapper .table__single a .table__row .row i {
+          color: #3b7cdb;
+          float: right; }
+        .ifx-row-table .table__wrapper .table__single a .table__row .row .arrow-col {
+          position: absolute; }
+    .ifx-row-table .table__wrapper .table__single a:hover {
+      text-decoration: none; }
+      .ifx-row-table .table__wrapper .table__single a:hover .table__row {
+        background-color: #f7f8f8; }
+
+@media (min-width: 768px) {
+  .ifx-row-table .table__wrapper .table__single a .table__row {
+    padding: 2.3rem 3.2rem; }
+    .ifx-row-table .table__wrapper .table__single a .table__row .row .arrow-col {
+      position: relative; }
+    .ifx-row-table .table__wrapper .table__single a .table__row .row h6.col2 {
+      color: #2a3a46; }
+      .ifx-row-table .table__wrapper .table__single a .table__row .row h6.col2 span {
+        display: none; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
