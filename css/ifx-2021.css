@@ -941,5 +941,40 @@ div#main {
       color: #2a3a46; }
       .ifx-row-table .table__wrapper .table__single a .table__row .row h6.col2 span {
         display: none; } }
+.ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content {
+  margin-top: 2rem; }
+  .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content h2 {
+    margin-bottom: 2.5rem; }
+  .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content .caps {
+    margin-bottom: 1rem; }
+.ifx-row-controls_carousel .controls-carousel__wrapper .glide__bullets {
+  position: relative;
+  bottom: 0; }
+
+@media (min-width: 768px) {
+  .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide {
+    background-color: #fafcfe; }
+    .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content {
+      margin-top: 0;
+      padding: 3rem 0; }
+      .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content h2 {
+        margin-bottom: 2.5rem; }
+      .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content .caps {
+        margin-bottom: 1rem; }
+    .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__image {
+      padding: 0 2.5rem; }
+  .ifx-row-controls_carousel .controls-carousel__wrapper .slide-controls {
+    margin-bottom: 3rem; } }
+@media (min-width: 992px) {
+  .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content {
+    margin-top: 0; }
+    .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content h2 {
+      margin-bottom: 4.5rem; }
+    .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content .caps {
+      margin-bottom: 1rem; }
+  .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__image {
+    padding: 0 7.5rem;
+    position: relative;
+    top: 5rem; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
