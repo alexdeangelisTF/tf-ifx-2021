@@ -5,7 +5,7 @@ $layout = get_sub_field('layout');
 $text = get_sub_field('text');
 $imageID = get_sub_field('image');
 $button = get_sub_field('button');
-$preheader = get_sub_field('preheader');
+$preheading = get_sub_field('preheading');
 
 if ($layout == 'text_image') {
 	$rowReverse = 'flex-md-row-reverse';
@@ -24,9 +24,8 @@ echo '</div>';
 echo '</div>';
 echo '<div class="col-12 col-md-6 col-lg-5 d-flex align-items-center">';
 echo '<div class="image-text__introduction">';
-if ($preheader == 'text') {
-	$preheaderText = get_sub_field('preheader_text');
-	echo '<div class="caps">' . $preheaderText . '</div>';
+if ($preheading) {
+	echo '<div class="caps">' . $preheading . '</div>';
 }
 echo '<h2 class="weight-700">' . $heading . '</h2>';
 echo '<h5 class="black-3">' . $text . '</h5>';
