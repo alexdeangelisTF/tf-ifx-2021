@@ -513,9 +513,9 @@ div#main {
 .ifx-row-image_text .image-text__introduction {
   margin-bottom: 0; }
 
-.ifx-row-feature_tiles .feature-tiles__introduction p {
+.ifx-row-feature_tiles .feature-tiles__introduction h5 {
   color: #69757d; }
-  .ifx-row-feature_tiles .feature-tiles__introduction p strong {
+  .ifx-row-feature_tiles .feature-tiles__introduction h5 strong {
     color: #4a90e2; }
 .ifx-row-feature_tiles .feature-tile {
   box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
@@ -735,22 +735,64 @@ div#main {
 @media (min-width: 768px) {
   .ifx-row-contact_tiles .contact-tile .contact-tile__content {
     padding: 4.8rem 4.8rem 4rem; } }
-.ifx-row-image_text_overlap .image-text-overlap__wrapper .row {
-  position: relative; }
-  .ifx-row-image_text_overlap .image-text-overlap__wrapper .row .introduction-wrapper {
-    position: absolute;
-    right: 0;
-    display: flex;
-    height: 100%;
-    align-items: center; }
-.ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text__image {
+.ifx-row-image_text_overlap .image-text-overlap__wrapper .col-image {
+  padding: 0; }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one {
+  width: 100%;
+  padding: 12rem 0;
   background-size: cover;
-  background-position: center;
-  height: 619px; }
-.ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__introduction {
-  margin-bottom: 0;
-  background-color: #ffffff; }
+  background-position: center; }
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two {
+    width: 60.7%;
+    margin-right: -52%; }
+    .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two .two-content {
+      margin-right: 1.5rem;
+      box-shadow: 0 10px 12px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+      border-radius: 0.6rem;
+      background-color: #ffffff;
+      padding: 5.4rem 4rem 8rem 6.2rem; }
+      .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two .two-content .image-text-overlap__introduction {
+        margin-bottom: 0; }
+        .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two .two-content .image-text-overlap__introduction h5 {
+          margin-top: 3rem; }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper .two-content-mobile {
+  margin-top: 5rem; }
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper .two-content-mobile .image-text-overlap__introduction {
+    margin: 0; }
 
+@media (min-width: 768px) {
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper .col-image {
+    padding: 0 1.5rem; }
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one {
+    width: 75%;
+    padding: 6rem 0; }
+    .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two {
+      width: 100%;
+      margin-right: -36%; }
+      .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two .two-content {
+        padding: 4rem; }
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container.rtl {
+    direction: rtl; }
+    .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container.rtl .one .two {
+      margin-left: -33.5%;
+      margin-right: auto; }
+      .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container.rtl .one .two .two-content {
+        direction: ltr; } }
+@media (min-width: 992px) {
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one {
+    width: 66.4%;
+    padding: 6rem 0; }
+    .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two {
+      width: 60.7%;
+      margin-right: -52%; }
+      .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two .two-content h2 {
+        font-size: 2.8rem;
+        line-height: 1; }
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container.rtl .one .two {
+    margin-left: -50.5%; } }
+@media (min-width: 1200px) {
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two .two-content {
+    padding: 5.4rem 4rem 8rem 6.2rem; } }
 .ifx-row-purchase_example .purchase-example__single {
   box-shadow: 0 10px 12px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
   margin-bottom: 3rem;
