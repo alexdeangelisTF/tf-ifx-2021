@@ -5,7 +5,7 @@ echo '</div>';
 
 $heading = get_sub_field('heading');
 $preheading = get_sub_field('preheading');
-$introductionText = get_sub_field('introduction_text');
+$text = get_sub_field('text');
 $tiles = get_sub_field('tiles');
 
 echo '<div class="ifx-row-wrapper">';
@@ -23,8 +23,8 @@ if ($heading) {
 	echo $heading;
 	echo '</h2>';
 }
-if ($introductionText) {
-	echo $introductionText;
+if ($text) {
+	echo $text;
 }
 echo '</div>';
 echo '</div>';
