@@ -55,6 +55,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/table.php';
 		} elseif ( $rowType == 'controls_carousel' ) {
 			include __DIR__ . '/rows/controls-carousel.php';
+		} elseif ( $rowType == 'directors' ) {
+			include __DIR__ . '/rows/directors.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
