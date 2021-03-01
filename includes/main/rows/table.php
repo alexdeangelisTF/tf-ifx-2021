@@ -17,7 +17,7 @@ echo '<div class="table__wrapper">';
 echo '<div class="row">';
 
 echo '<div class="col-12 col-md-8 col-lg-6">';
-echo '<div class="form__introduction">';
+echo '<div class="table__introduction">';
 if ($preheading) {
 	echo '<div class="caps">';
 	echo $preheading;
