@@ -976,5 +976,25 @@ div#main {
     padding: 0 7.5rem;
     position: relative;
     top: 5rem; } }
+.ifx-row-directors {
+  background-color: #fafcfe; }
+  .ifx-row-directors .directors__wrapper .directors__introduction {
+    text-align: center; }
+  .ifx-row-directors .directors__wrapper .director-single {
+    margin-bottom: 9rem; }
+    .ifx-row-directors .directors__wrapper .director-single img {
+      height: 342px;
+      object-fit: cover; }
+    .ifx-row-directors .directors__wrapper .director-single h4 {
+      margin-top: 2.4rem; }
+
+@media (max-width: 991px) {
+  .ifx-row-directors .directors__wrapper .director-single {
+    margin-bottom: 4rem; }
+    .ifx-row-directors .directors__wrapper .director-single h4 {
+      font-size: 2.2rem;
+      line-height: 1.8rem;
+      letter-spacing: 0;
+      margin-bottom: 1.2rem; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
