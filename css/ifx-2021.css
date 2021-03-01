@@ -242,6 +242,8 @@ h2 {
   color: #2a3a46; }
   h2.white {
     color: #ffffff; }
+  h2.blue-1 {
+    color: #4a90e2; }
 
 h3 {
   color: #2a3a46; }
@@ -996,5 +998,21 @@ div#main {
       line-height: 1.8rem;
       letter-spacing: 0;
       margin-bottom: 1.2rem; } }
+.ifx-row-key_features .key-features__wrapper {
+  border-radius: 1rem;
+  box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+  background-color: #ffffff;
+  padding: 6rem 1.6rem 3rem; }
+  .ifx-row-key_features .key-features__wrapper .feature-single {
+    text-align: center;
+    margin-bottom: 3rem; }
+    .ifx-row-key_features .key-features__wrapper .feature-single h6 {
+      margin-bottom: 0; }
+
+@media (min-width: 992px) {
+  .ifx-row-key_features .key-features__wrapper {
+    padding: 3rem 1.6rem 3rem; }
+    .ifx-row-key_features .key-features__wrapper .feature-single {
+      margin-bottom: 0; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
