@@ -24,7 +24,7 @@ if ($heading) {
 	echo '</h2>';
 }
 if ($text) {
-	echo $text;
+	echo '<h5>' . $text . '</h5>';
 }
 echo '</div>';
 echo '</div>';
