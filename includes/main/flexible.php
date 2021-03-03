@@ -24,7 +24,13 @@ if( have_rows('ifx_flexible_rows') ) {
 		} else {
 			$overlapClass = false;
 		}
-		echo '<section class="' . $displayClass . ' ' . $overlapClass . '">';
+		// If row type is hero video background add class to section
+		if ($rowType == 'hero_video_background' ) {
+			$heroVideoBGClass = 'heroVideoBG';
+		} else {
+			$heroVideoBGClass = false;
+		}
+		echo '<section class="' . $displayClass . ' ' . $overlapClass . ' ' . $heroVideoBGClass . '">';
 		echo '<div class="ifx-row ifx-row-' . $rowType . ' ifx-row-' . $rowCount . '">';
 		
 		// Check for custom padding
@@ -71,6 +77,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/directors.php';
 		} elseif ( $rowType == 'key_features' ) {
 			include __DIR__ . '/rows/key-features.php';
+		} elseif ( $rowType == 'hero_video_background' ) {
+			include __DIR__ . '/rows/hero-video-background.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
