@@ -79,6 +79,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/key-features.php';
 		} elseif ( $rowType == 'hero_video_background' ) {
 			include __DIR__ . '/rows/hero-video-background.php';
+		} elseif ( $rowType == 'testimonial' ) {
+			include __DIR__ . '/rows/testimonial.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
