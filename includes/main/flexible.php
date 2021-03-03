@@ -12,7 +12,19 @@ if( have_rows('ifx_flexible_rows') ) {
 		} else {
 			$displayClass = 'd-block';
 		}
-		echo '<section class="' . $displayClass . '">';
+		// If row type is hero, check if image is allowed to overlap
+		$allowImageOverlap = false;
+		if ( $rowType == 'hero' ) {
+			$allowImageOverlap = get_sub_field('allow_image_overlap');
+			if ($allowImageOverlap) {
+				$overlapClass = 'overlap';
+			} else {
+				$overlapClass = false;
+			}
+		} else {
+			$overlapClass = false;
+		}
+		echo '<section class="' . $displayClass . ' ' . $overlapClass . '">';
 		echo '<div class="ifx-row ifx-row-' . $rowType . ' ifx-row-' . $rowCount . '">';
 		
 		// Check for custom padding
