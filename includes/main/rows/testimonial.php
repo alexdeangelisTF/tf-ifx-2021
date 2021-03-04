@@ -47,12 +47,13 @@ echo '<div class="col-12">';
 
 echo '<div class="testimonial testimonial-' . $variation . '">';
 
-if ($imageID && $variation != 'type_2') {
+if ($imageID && $variation != 'type_2' && $variation != 'type_1') {
 	echo '<div class="testimonial__image">';
 	echo  wp_get_attachment_image($imageID, 'full');
 	echo '</div>';
 }
 echo '<div class="testimonial__content">';
+echo '<div class="testimonial__content__inner">';
 if ($preheading) {
 	echo '<div class="caps preheading">';
 	echo $preheading;
@@ -76,7 +77,28 @@ if ($subheading) {
 }
 echo '</div>';
 
+if ($imageID && $variation == 'type_1') {
+	echo '<div class="testimonial__content__image ratio" style="background-image:url(' . wp_get_attachment_url($imageID) . ')">';
+	echo '<div class="content">';
+	echo '</div>';
+	//echo '<h3>Sample text</h3>';
+	echo '</div>';
+}
 
+echo '</div>';
+
+if ($variation == 'type_1') {
+	$ctaText = get_sub_field('cta_text');
+	$ctaButton = get_sub_field('cta_button');
+	if ($ctaText) {
+		echo '<div class="testimonial__cta">';
+		echo '<h4>' . $ctaText . '</h4>';
+		if ($ctaButton) {
+			echo '<a href="' . $ctaButton['url'] . '" class="button" target="' . $ctaButton['target'] . '">' . $ctaButton['title'] . '</a>';
+		}
+		echo '</div>';
+	}
+}
 
 echo '</div>';
 echo '</div>';
