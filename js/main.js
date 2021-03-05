@@ -37,4 +37,17 @@
 	$( ".ifx-wrap" ).wrapAll( "<div class='ifx-wrapper' />");
 	$( ".ifx-sub-wrap" ).wrapAll( "<div class='ifx-sub-wrapper' />");
 	
+	
+	/* Controls Carousel Active Button */
+	
+	$('.ifx-row-controls_carousel .slide-controls button').on('click',function() {
+		
+		$('.ifx-row-controls_carousel .slide-controls button').each(function() {
+			$(this).removeClass('active');
+		})
+		
+		$(this).addClass('active');
+		
+	})
+	
 })( jQuery );
