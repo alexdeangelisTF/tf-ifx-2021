@@ -332,6 +332,8 @@ header {
     background-color: #ebf1fa; }
     header nav .menu-wrapper {
       width: 100%; }
+      header nav .menu-wrapper img.white {
+        display: none; }
   header ul li a {
     font-weight: 700;
     color: #222222; }
@@ -461,7 +463,12 @@ header {
   .page-template-template-reverse-header header ul li a {
     color: #ffffff; }
   .page-template-template-reverse-header header ul li ul li a {
-    color: #2a3a46; } }
+    color: #2a3a46; }
+
+  .page-template-template-reverse-header .menu-wrapper img.white {
+    display: block; }
+  .page-template-template-reverse-header .menu-wrapper img.black {
+    display: none; } }
 @media (max-width: 991px) {
   header ul li ul.dropdown-menu:before, header ul li ul.dropdown-menu:after {
     display: none; }
