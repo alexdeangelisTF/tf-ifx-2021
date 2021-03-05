@@ -81,6 +81,10 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/hero-video-background.php';
 		} elseif ( $rowType == 'testimonial' ) {
 			include __DIR__ . '/rows/testimonial.php';
+		} elseif ( $rowType == 'cta_card' ) {
+			include __DIR__ . '/rows/cta-card.php';
+		} elseif ( $rowType == 'globe_animation' ) {
+			include __DIR__ . '/rows/globe-animation.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
