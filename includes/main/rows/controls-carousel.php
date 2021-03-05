@@ -22,10 +22,10 @@ echo '<div class="controls-carousel__slider">';
 
 
 echo '<div class="glide">';
-echo '<div class="row">';
+echo '<div class="row align-items-lg-center">';
 
 // Introduction
-echo '<div class="col-12 col-lg-5">';
+echo '<div class="col-9 col-lg-5">';
 echo '<div class="controls-carousel__introduction">';
 if ($preheading) {
 	echo '<div class="caps">';
@@ -47,12 +47,32 @@ echo '</div>';
 
 // Slider Controls
 if ($slides) {
+	
+	// Slide Control CSS
+	echo '<style>';
+	$slideCount = 1;
+	foreach($slides as $slide) {
+		echo '.ifx-row-controls_carousel.ifx-row-7 .slide-controls button:nth-child(' . $slideCount . '):after {';
+		echo 'content:"' . $slide['control_text'] . '"';
+		echo '}';
+		$slideCount++;
+	}
+	echo '</style>';
+	
 	echo '<div class="d-none d-md-block d-lg-block d-xl-block col-12 col-lg-7">';
 	echo '<div class="slide-controls">';
 	echo '<div data-glide-el="controls">';
-	$slideCount = 0;
+	$slideCount = 1;
 	foreach($slides as $slide) {
-		echo '<button data-glide-dir="=' . $slideCount . '">Slide ' . $slideCount . '</button>';
+		if ($slideCount == 1) {
+			$active = 'active';
+		} else {
+			$active = false;
+		}
+		$slideCountMinus = $slideCount-1;
+		echo '<button class="' . $active . '" data-glide-dir="=' . $slideCountMinus . '">';
+		echo '<div class="circle"><div class="circle__inner"></div>';
+		echo '</button>';
 		$slideCount++;
 	}
 	echo '</div>';
@@ -70,8 +90,6 @@ if ($slides) {
 	echo '<ul class="glide__slides">';
 	$slideCount = 0;
 	foreach($slides as $slide) {
-		//echo '<li class="glide__slide">Slide ' . $slideCount . '</li>';
-		
 		$preheading = false;
 		$preheading = $slide['preheading'];
 		$heading = false;
@@ -113,12 +131,19 @@ if ($slides) {
 	}
 	echo '</ul>';
 	echo '</div>';
-	//echo '<div class="glide__bullets d-md-none d-lg-none d-xl-none" data-glide-el="controls[nav]">';
-  //echo '<button class="glide__bullet" data-glide-dir="=0"></button>';
-  //echo '<button class="glide__bullet" data-glide-dir="=1"></button>';
-  //echo '<button class="glide__bullet" data-glide-dir="=2"></button>';
-  //echo '</div>';
 	echo '</div>';
+	
+	echo '<div class="col-12 d-md-none d-lg-none d-xl-none">';
+	echo '<div class="glide__arrows" data-glide-el="controls">';
+  echo '<button class="glide__arrow glide__arrow--left" data-glide-dir="<">';
+	echo '<img src="/wp-content/uploads/2021/02/angle-down.svg">';
+	echo '</button>';
+  echo '<button class="glide__arrow glide__arrow--right" data-glide-dir=">">';
+	echo '<img src="/wp-content/uploads/2021/02/angle-down.svg">';
+	echo '</button>';
+  echo '</div>';
+	echo '</div>';
+	
 	echo '</div>';
 }
 
@@ -129,7 +154,6 @@ if ($slides) {
 	echo '<script>';
 	echo 'new Glide(".ifx-row-' . $rowCount . ' .glide", {
 	type: "carousel",
-	autoplay: 5000,
 	}).mount()';
 	echo '</script>';
 }
