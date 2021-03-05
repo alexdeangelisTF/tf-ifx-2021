@@ -455,11 +455,12 @@ header {
     margin-right: 2.2rem; }
     header .ifx-right-menu ul li:last-child {
       margin-right: 0; }
-  header#reverse-header ul li.button.white a {
+
+  .page-template-template-reverse-header header ul li.button.white a {
     background-color: transparent; }
-  header#reverse-header ul li a {
+  .page-template-template-reverse-header header ul li a {
     color: #ffffff; }
-  header#reverse-header ul li ul li a {
+  .page-template-template-reverse-header header ul li ul li a {
     color: #2a3a46; } }
 @media (max-width: 991px) {
   header ul li ul.dropdown-menu:before, header ul li ul.dropdown-menu:after {

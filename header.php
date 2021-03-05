@@ -1,14 +1,3 @@
-<?php
-// Get the name of the page template
-$pageTemplate = basename( get_page_template() );
-if ($pageTemplate = 'template-reverse-header.php') {
-	$template = 'reverse-header';
-} else {
-	$template = false;
-}
-
-?>
-
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
     <head>
@@ -23,7 +12,7 @@ if ($pageTemplate = 'template-reverse-header.php') {
 			
 			<?php
 			
-			echo '<header id="' . $template . '">';
+			echo '<header>';
 			echo '<nav class="navbar navbar-expand-lg" role="navigation">';
 			echo '<div class="container">';
 			echo '<div class="mobile-header d-lg-none">';
