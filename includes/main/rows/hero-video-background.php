@@ -15,7 +15,7 @@ $videoBackground = wp_get_attachment_url($videoBackgroundID);
 
 
 if ($videoBackground) {
-	echo '<video autoplay muted loop id="myVideo">';
+	echo '<video playsinline autoplay muted loop id="myVideo">';
 	echo '<source src="' . $videoBackground . '" type="video/mp4">';
 	echo '</video>';
 }
