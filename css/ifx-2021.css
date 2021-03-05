@@ -820,12 +820,27 @@ div#main {
       padding: 5.4rem 4rem 8rem 6.2rem; }
       .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two .two-content .image-text-overlap__introduction {
         margin-bottom: 0; }
-        .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two .two-content .image-text-overlap__introduction h5 {
-          margin-top: 3rem; }
 .ifx-row-image_text_overlap .image-text-overlap__wrapper .two-content-mobile {
   margin-top: 5rem; }
   .ifx-row-image_text_overlap .image-text-overlap__wrapper .two-content-mobile .image-text-overlap__introduction {
     margin: 0; }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__introduction h2 {
+  margin: 0; }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__introduction h5 {
+  margin-bottom: 3rem; }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .row__variation-intro {
+  margin-bottom: 3rem; }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction img {
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1); }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction hr {
+  border: solid 0.1rem #f7f8f8;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem; }
 
 @media (min-width: 768px) {
   .ifx-row-image_text_overlap .image-text-overlap__wrapper .col-image {
@@ -844,7 +859,9 @@ div#main {
       margin-left: -33.5%;
       margin-right: auto; }
       .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container.rtl .one .two .two-content {
-        direction: ltr; } }
+        direction: ltr; }
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction .caps {
+    margin-bottom: 0; } }
 @media (min-width: 992px) {
   .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one {
     width: 66.4%;
@@ -856,7 +873,11 @@ div#main {
         font-size: 2.8rem;
         line-height: 1; }
   .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container.rtl .one .two {
-    margin-left: -50.5%; } }
+    margin-left: -50.5%; }
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .row__variation-intro {
+    margin-bottom: 4.5rem; }
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction img {
+    margin-bottom: 3rem; } }
 @media (min-width: 1200px) {
   .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__container .one .two .two-content {
     padding: 5.4rem 4rem 8rem 6.2rem; } }
