@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(-107 -112) translate(107 112)">
+                <path d="M0 0H42V42H0z"/>
+                <rect width="7" height="7" x="7" y="7" fill="#4A90E2" fill-rule="nonzero" rx="2"/>
+                <rect width="7" height="7" x="7" y="17.5" fill="#DBE9F9" fill-rule="nonzero" rx="2"/>
+                <rect width="7" height="7" x="17.5" y="7" fill="#4A90E2" fill-rule="nonzero" rx="2"/>
+                <rect width="7" height="7" x="17.5" y="17.5" fill="#4A90E2" fill-rule="nonzero" rx="2"/>
+                <rect width="7" height="7" x="28" y="7" fill="#DBE9F9" fill-rule="nonzero" rx="2"/>
+                <rect width="7" height="7" x="28" y="17.5" fill="#DBE9F9" fill-rule="nonzero" rx="2"/>
+                <rect width="7" height="7" x="7" y="28" fill="#DBE9F9" fill-rule="nonzero" rx="2"/>
+                <rect width="7" height="7" x="17.5" y="28" fill="#DBE9F9" fill-rule="nonzero" rx="2"/>
+                <rect width="7" height="7" x="28" y="28" fill="#DBE9F9" fill-rule="nonzero" rx="2"/>
+            </g>
+        </g>
+    </g>
+</svg>
