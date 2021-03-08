@@ -69,7 +69,7 @@ if ($questions) {
 			echo $headerLink;
 			echo '<h5 class="weight-700 d-flex justify-content-between align-items-center">';
 			echo $questionText;
-			echo ' <img src="' . get_template_directory_uri() . '/img/angle-down.svg" />';
+			echo ' <img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
 			echo '</h5>';
 			echo '</a>';
 			echo '</div>';

@@ -136,10 +136,10 @@ if ($slides) {
 	echo '<div class="col-12 d-md-none d-lg-none d-xl-none">';
 	echo '<div class="glide__arrows" data-glide-el="controls">';
   echo '<button class="glide__arrow glide__arrow--left" data-glide-dir="<">';
-	echo '<img src="/wp-content/uploads/2021/02/angle-down.svg">';
+	echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
 	echo '</button>';
   echo '<button class="glide__arrow glide__arrow--right" data-glide-dir=">">';
-	echo '<img src="/wp-content/uploads/2021/02/angle-down.svg">';
+	echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
 	echo '</button>';
   echo '</div>';
 	echo '</div>';
