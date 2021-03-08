@@ -13,23 +13,42 @@
 			<?php
 			
 			echo '<header>';
+			
+			echo '<div class="mobile-menu-dropdown">';
+			wp_nav_menu( 
+				array( 
+					'theme_location' => 'main-menu-mobile' 
+				) 
+			);
+			
+			echo '<button class="mobile-close" type="button">';
+			echo '<span class="sr-only">Close navigation</span>';
+			echo '<span class="icon-bar top-bar"></span>';
+			echo '<span class="icon-bar middle-bar"></span>';
+			echo '<span class="icon-bar bottom-bar"></span>';
+			echo '</button>';
+			
+			echo '</div>';
+			
 			echo '<nav class="navbar navbar-expand-lg" role="navigation">';
 			echo '<div class="container">';
 			echo '<div class="mobile-header d-lg-none">';
 			// Hide this logo on desktop
 			echo '<div class="logo d-lg-none">';
 			echo '<a href="' . get_site_url() . '">';
-			echo '<img src="' . get_template_directory_uri() . '/img/ifx-logo.svg">';
+			echo '<img src="' . get_template_directory_uri() . '/img/ifx-logo.svg" class="black">';
+			echo '<img src="' . get_template_directory_uri() . '/img/ifx-logo-white.svg" class="white">';
 			echo '</a>';
 			echo '</div>';
-			echo '<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#ifx-navbar-collapse" aria-controls="bs-example-navbar-collapse" aria-expanded="false">';
+			echo '<button class="navbar-toggler" type="button">';
 			echo '<span class="sr-only">Toggle navigation</span>';
 			echo '<span class="icon-bar top-bar"></span>';
 			echo '<span class="icon-bar middle-bar"></span>';
 			echo '<span class="icon-bar bottom-bar"></span>';
 			echo '</button>';
 			echo '</div>';
-			echo '<div class="menu-wrapper">';
+			
+			echo '<div class="menu-wrapper d-none d-lg-block d-xl-block">';
 			echo '<div class="d-lg-flex justify-content-lg-between align-content-lg-center collapse navbar-collapse" id="ifx-navbar-collapse">';
 			echo '<div class="ifx-main-menu d-lg-flex">';
 			wp_nav_menu( 
