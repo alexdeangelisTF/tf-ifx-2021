@@ -85,6 +85,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/cta-card.php';
 		} elseif ( $rowType == 'globe_animation' ) {
 			include __DIR__ . '/rows/globe-animation.php';
+		} elseif ( $rowType == 'text_features' ) {
+			include __DIR__ . '/rows/text-features.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
