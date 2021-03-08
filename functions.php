@@ -7,6 +7,7 @@ function register_menus() {
 	register_nav_menu('menu-footer-solutions',__( 'Footer - Solutions' ));
 	register_nav_menu('menu-footer-markets',__( 'Footer - Markets' ));
 	register_nav_menu('menu-footer-legal',__( 'Footer - Legal' ));
+	register_nav_menu('main-menu-mobile',__( 'Main Menu Mobile' ));
 }
 add_action( 'init', 'register_menus' );
 
