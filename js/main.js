@@ -39,7 +39,6 @@
 	
 	
 	/* Controls Carousel Active Button */
-	
 	$('.ifx-row-controls_carousel .slide-controls button').on('click',function() {
 		
 		$('.ifx-row-controls_carousel .slide-controls button').each(function() {
@@ -49,5 +48,23 @@
 		$(this).addClass('active');
 		
 	})
+	
+	/* Function to disable scrolling */
+	function noScroll() {
+		window.scrollTo(0, 0);
+	}
+	
+	/* Mobile Menu open/close */
+	$('header .mobile-header button.navbar-toggler').on('click', function() {
+		$('.mobile-menu-dropdown').slideDown();
+		// Disable scroll
+		window.addEventListener('scroll', noScroll);
+	});
+	$('header .mobile-menu-dropdown button.mobile-close').on('click', function() {
+		$('.mobile-menu-dropdown').slideUp();
+		// Enable scroll
+		window.removeEventListener('scroll', noScroll);
+	});
+	
 	
 })( jQuery );
