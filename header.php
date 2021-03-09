@@ -49,7 +49,7 @@
 			echo '</div>';
 			
 			echo '<div class="menu-wrapper d-none d-lg-block d-xl-block">';
-			echo '<div class="d-lg-flex justify-content-lg-between align-content-lg-center collapse navbar-collapse" id="ifx-navbar-collapse">';
+			echo '<div class="d-lg-flex align-content-lg-center collapse navbar-collapse" id="ifx-navbar-collapse">';
 			echo '<div class="ifx-main-menu d-lg-flex">';
 			wp_nav_menu( 
 				array(
