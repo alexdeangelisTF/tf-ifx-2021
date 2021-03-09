@@ -548,7 +548,8 @@ header {
       margin-right: 0; }
 
   .page-template-template-reverse-header header ul li.button.white a {
-    background-color: transparent; }
+    background-color: transparent !important;
+    color: #ffffff !important; }
   .page-template-template-reverse-header header ul li a {
     color: #ffffff; }
   .page-template-template-reverse-header header ul li ul li a {
