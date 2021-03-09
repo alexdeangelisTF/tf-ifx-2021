@@ -357,8 +357,13 @@ header {
     background-color: transparent; }
     header nav .menu-wrapper {
       width: 100%; }
-      header nav .menu-wrapper img.white {
-        display: none; }
+      header nav .menu-wrapper .navbar-collapse > * {
+        width: 40%; }
+      header nav .menu-wrapper .navbar-collapse .logo {
+        width: 20%;
+        text-align: center; }
+      header nav .menu-wrapper .navbar-collapse .ifx-right-menu ul {
+        justify-content: flex-end; }
   header ul li a {
     font-weight: 700;
     color: #222222; }
@@ -523,6 +528,14 @@ header {
           display: flex; }
           header .mobile-menu-dropdown ul.sub-menu a:before {
             margin-right: 1.6rem; }
+  header img.white {
+    display: none; }
+
+.page-template-template-reverse-header header img.white {
+  display: block;
+  margin: auto; }
+.page-template-template-reverse-header header img.black {
+  display: none; }
 
 @media (min-width: 992px) {
   header nav .row {
@@ -553,12 +566,7 @@ header {
   .page-template-template-reverse-header header ul li a {
     color: #ffffff; }
   .page-template-template-reverse-header header ul li ul li a {
-    color: #2a3a46; }
-
-  .page-template-template-reverse-header .menu-wrapper img.white {
-    display: block; }
-  .page-template-template-reverse-header .menu-wrapper img.black {
-    display: none; } }
+    color: #2a3a46; } }
 @media (max-width: 991px) {
   header ul li ul.dropdown-menu:before, header ul li ul.dropdown-menu:after {
     display: none; }
@@ -1617,6 +1625,19 @@ div#main {
     margin-bottom: 5rem; }
     .ifx-row-text_features .container .text-features__wrapper .text-feature__box .text-feature__content hr {
       margin: 2rem 0; } }
+.page-contents {
+  position: relative;
+  z-index: 2;
+  padding: 4.5rem 0 0; }
+  .page-contents .page-headline {
+    padding-top: 6rem; }
+
+@media (min-width: 768px) {
+  .page-contents .page-headline {
+    text-align: center; } }
+@media (min-width: 992px) {
+  .page-contents {
+    padding: 6rem 0 0; } }
 .ifx-row-news .news__introduction {
   margin-top: 4rem; }
   .ifx-row-news .news__introduction h1 {
