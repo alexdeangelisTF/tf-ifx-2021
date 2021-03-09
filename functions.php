@@ -89,7 +89,7 @@ function wp_query_pagination( $custom_query ) {
 
 
 
-function crunchify_social_sharing_buttons() {
+function ifx_social_sharing_buttons() {
 	global $post;
 	
 	// Get current page URL 
@@ -104,7 +104,7 @@ function crunchify_social_sharing_buttons() {
 
 
 	// Add sharing button at the end of page/page content
-	$content .= '<div class="crunchify-social">';
+	$content .= '<div class="ifx-social-share">';
 	$content .= '<a class="crunchify-link crunchify-facebook" href="'.$facebookURL.'" target="popup" onclick="window.open(\'' . $facebookURL . '\',\'popup\',\'width=600,height=400\'); return false;"><i class="fab fa-facebook-square"></i></a>';
 	$content .= '<a class="crunchify-link crunchify-linkedin" href="'.$linkedInURL.'" target="popup" onclick="window.open(\'' . $linkedInURL . '\',\'popup\',\'width=600,height=400\'); return false;"><i class="fab fa-linkedin"></i></a>';
 	$content .= '</div>';
