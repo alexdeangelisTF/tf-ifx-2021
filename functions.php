@@ -86,3 +86,29 @@ function wp_query_pagination( $custom_query ) {
 		));
 	}
 }
+
+
+
+function crunchify_social_sharing_buttons() {
+	global $post;
+	
+	// Get current page URL 
+	$crunchifyURL = urlencode(get_permalink());
+
+	// Get current page title
+	$crunchifyTitle = str_replace( ' ', '%20', get_the_title());
+
+	// Construct sharing URL without using any script
+	$facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$crunchifyURL;
+	$linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$crunchifyURL.'&amp;title='.$crunchifyTitle;
+
+
+	// Add sharing button at the end of page/page content
+	$content .= '<div class="crunchify-social">';
+	$content .= '<a class="crunchify-link crunchify-facebook" href="'.$facebookURL.'" target="popup" onclick="window.open(\'' . $facebookURL . '\',\'popup\',\'width=600,height=400\'); return false;"><i class="fab fa-facebook-square"></i></a>';
+	$content .= '<a class="crunchify-link crunchify-linkedin" href="'.$linkedInURL.'" target="popup" onclick="window.open(\'' . $linkedInURL . '\',\'popup\',\'width=600,height=400\'); return false;"><i class="fab fa-linkedin"></i></a>';
+	$content .= '</div>';
+
+	return $content;
+};
+//add_filter( 'the_content', 'crunchify_social_sharing_buttons');
