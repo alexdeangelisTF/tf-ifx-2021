@@ -1780,6 +1780,30 @@ div#main {
       .ifx-row-news .news-single .news-text h4 {
         margin-bottom: 2rem;
         margin-top: 1rem; } }
+.ifx-row-market-report {
+  padding-bottom: 3rem; }
+  .ifx-row-market-report .news-market-report .market-report__title {
+    margin-bottom: 3rem; }
+    .ifx-row-market-report .news-market-report .market-report__title hr {
+      border-top: solid 1px #f7f8f8; }
+  .ifx-row-market-report .news-market-report .market-report__content h4 {
+    margin-bottom: 1.5rem; }
+  .ifx-row-market-report .news-market-report .market-report__content h5 p {
+    margin-bottom: 2.5rem; }
+    .ifx-row-market-report .news-market-report .market-report__content h5 p:last-child {
+      margin-bottom: 0; }
+
+@media (min-width: 768px) {
+  .ifx-row-market-report .news-market-report .market-report__content h5 {
+    column-count: 2;
+    column-gap: 3.4rem; } }
+@media (min-width: 992px) {
+  .ifx-row-market-report {
+    padding-bottom: 9.3rem; }
+    .ifx-row-market-report .news-market-report .market-report__title .caps {
+      margin-bottom: 1.4rem; }
+    .ifx-row-market-report .news-market-report .market-report__title hr {
+      margin-top: 1.8rem; } }
 ul li.dial-numbers-blue a:before {
   background-image: url("../img/blue/dial-numbers.svg"); }
 ul li.duplicate-blue a:before {
