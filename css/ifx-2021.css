@@ -1627,6 +1627,55 @@ div#main {
     margin-bottom: 5rem; }
     .ifx-row-text_features .container .text-features__wrapper .text-feature__box .text-feature__content hr {
       margin: 2rem 0; } }
+.ifx-row-dark .container {
+  padding-left: 0;
+  padding-right: 0; }
+  .ifx-row-dark .container .dark__wrapper .row {
+    margin-right: 0;
+    margin-left: 0; }
+    .ifx-row-dark .container .dark__wrapper .row [class^="col-"] {
+      padding-left: 0;
+      padding-right: 0; }
+      .ifx-row-dark .container .dark__wrapper .row [class^="col-"] .dark__text-col,
+      .ifx-row-dark .container .dark__wrapper .row [class^="col-"] .dark__features-col {
+        padding: 0 25px; }
+      .ifx-row-dark .container .dark__wrapper .row [class^="col-"] .dark__text-col {
+        background-color: #2a3a46;
+        text-align: center;
+        padding-top: 3.2rem;
+        padding-bottom: 4rem; }
+      .ifx-row-dark .container .dark__wrapper .row [class^="col-"] .dark__features-col {
+        padding-top: 2rem; }
+        .ifx-row-dark .container .dark__wrapper .row [class^="col-"] .dark__features-col .dark__features-col__single {
+          padding: 1.5rem 0; }
+          .ifx-row-dark .container .dark__wrapper .row [class^="col-"] .dark__features-col .dark__features-col__single h4 {
+            color: #4a90e2;
+            font-size: 2.8rem;
+            line-height: 3.8rem;
+            letter-spacing: -0.1rem; }
+
+@media (min-width: 768px) {
+  .ifx-row-dark .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+    .ifx-row-dark .container .dark__wrapper .row {
+      margin-left: -1.5rem;
+      margin-right: -1.5rem; }
+      .ifx-row-dark .container .dark__wrapper .row [class^="col-"] {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; } }
+@media (min-width: 992px) {
+  .ifx-row-dark {
+    background-image: url(../img/dark-background.svg);
+    background-size: cover;
+    background-position: center; }
+    .ifx-row-dark .ifx-row-wrapper {
+      padding: 0 !important; }
+    .ifx-row-dark .container .dark__wrapper .row [class^="col-"] .dark__text-col {
+      background-color: transparent;
+      text-align: left; }
+      .ifx-row-dark .container .dark__wrapper .row [class^="col-"] .dark__text-col h4 {
+        color: #ffffff; } }
 .page-container {
   position: relative;
   z-index: 2;
