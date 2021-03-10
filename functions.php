@@ -112,3 +112,13 @@ function ifx_social_sharing_buttons() {
 	return $content;
 };
 //add_filter( 'the_content', 'crunchify_social_sharing_buttons');
+
+// Estimated reading time
+function reading_time() {
+	$content = get_post_field( 'post_content', $post->ID );
+	$word_count = str_word_count( strip_tags( $content ) );
+	$readingtime = ceil($word_count / 200);
+	$timer = " min read";
+	$totalreadingtime = $readingtime . $timer;
+	return $totalreadingtime;
+}
