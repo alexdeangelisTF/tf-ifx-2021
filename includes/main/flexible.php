@@ -87,6 +87,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/globe-animation.php';
 		} elseif ( $rowType == 'text_features' ) {
 			include __DIR__ . '/rows/text-features.php';
+		} elseif ( $rowType == 'dark' ) {
+			include __DIR__ . '/rows/dark.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
