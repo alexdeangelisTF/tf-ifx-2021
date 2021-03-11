@@ -42,7 +42,24 @@ add_action( 'wp_enqueue_scripts', 'your_scripts' );
 
 // Create options settings page
 if( function_exists('acf_add_options_page') ) {
-	acf_add_options_page();
+	acf_add_options_page(
+		array(
+			'page_title'    => __('Site Settings'),
+			'menu_title'    => __('Site Settings'),
+			'menu_slug'     => 'site-settings',
+			'capability'    => 'edit_posts',
+			'redirect'      => false
+		)
+	);
+	acf_add_options_page(
+		array(
+			'page_title'    => __('Icon Settings'),
+			'menu_title'    => __('Icon Settings'),
+			'menu_slug'     => 'icon-settings',
+			'capability'    => 'edit_posts',
+			'redirect'      => false
+		)
+	);
 }
 
 /*
