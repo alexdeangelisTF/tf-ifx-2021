@@ -21,8 +21,8 @@ if ($linkStyle) {
 	$link = get_sub_field('link');
 	if ($linkStyle == 'Basic') {
 		$linkClass = 'button basic';
-	} elseif ($linkStyle == 'button') {
-		$linkClass = 'Button';
+	} elseif ($linkStyle == 'Button') {
+		$linkClass = 'button';
 	} else {}
 	
 } else {
