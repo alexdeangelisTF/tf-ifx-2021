@@ -1853,31 +1853,5 @@ div#main {
       margin-bottom: 1.4rem; }
     .ifx-row-market-report .news-market-report .market-report__title hr {
       margin-top: 1.8rem; } }
-ul li.dial-numbers-blue a:before {
-  background-image: url("../img/blue/dial-numbers.svg"); }
-ul li.duplicate-blue a:before {
-  background-image: url("../img/blue/duplicate.svg"); }
-ul li.flatten-blue a:before {
-  background-image: url("../img/blue/flatten.svg"); }
-ul li.layout-4-blocks-blue a:before {
-  background-image: url("../img/blue/layout-4-blocks.svg"); }
-ul li.layout-left-panel-blue a:before {
-  background-image: url("../img/blue/layout-left-panel-2.svg"); }
-ul li.notification-blue a:before {
-  background-image: url("../img/blue/notification-2.svg"); }
-ul li.sending-blue a:before {
-  background-image: url("../img/blue/sending.svg"); }
-ul li.thunder-move-blue a:before {
-  background-image: url("../img/blue/thunder-move.svg"); }
-ul li.flatten-green a:before {
-  background-image: url("../img/green/flatten.svg"); }
-ul li.layout-4-blocks-green a:before {
-  background-image: url("../img/green/layout-4-blocks.svg"); }
-ul li.flatten-red a:before {
-  background-image: url("../img/red/flatten.svg"); }
-ul li.layout-4-blocks-red a:before {
-  background-image: url("../img/red/layout-4-blocks.svg"); }
-ul li.layout-left-panel-red a:before {
-  background-image: url("../img/red/layout-left-panel-2.svg"); }
 
 /*# sourceMappingURL=ifx-2021.css.map */
