@@ -1676,6 +1676,42 @@ div#main {
       text-align: left; }
       .ifx-row-dark .container .dark__wrapper .row [class^="col-"] .dark__text-col h4 {
         color: #ffffff; } }
+.ifx-row-exchange_rates .exchange-rates__wrapper .exchange-rates__introduction {
+  margin-top: 11rem;
+  text-align: center; }
+  .ifx-row-exchange_rates .exchange-rates__wrapper .exchange-rates__introduction h1 {
+    margin-bottom: 4.5rem; }
+.ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+  border-radius: 0.4rem; }
+  .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr {
+    border-top: 1px solid #f7f8f8; }
+    .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td {
+      padding: 2.3rem 0;
+      color: #2a3a46; }
+      .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td:first-child {
+        padding-left: 3rem;
+        display: flex; }
+      .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td .currency-flag {
+        width: 26px;
+        height: 26px;
+        background-position: center;
+        border-radius: 50%;
+        background-size: cover; }
+        .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td .currency-flag:first-child {
+          margin-right: 1rem; }
+        .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td .currency-flag:nth-child(2) {
+          margin-right: 1rem;
+          margin-left: 2rem; }
+.ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th {
+  font-size: 1.8rem;
+  padding: 2.3rem 0;
+  color: #2a3a46; }
+  .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th:first-child {
+    padding-left: 3rem; }
+
 .page-container {
   position: relative;
   z-index: 2;
