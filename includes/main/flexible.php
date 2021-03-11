@@ -89,6 +89,8 @@ if( have_rows('ifx_flexible_rows') ) {
 			include __DIR__ . '/rows/text-features.php';
 		} elseif ( $rowType == 'dark' ) {
 			include __DIR__ . '/rows/dark.php';
+		} elseif ( $rowType == 'exchange_rates' ) {
+			include __DIR__ . '/rows/exchange-rates.php';
 		} else {}
 		echo '</div>';
 		echo '</section>';
