@@ -1,6 +1,27 @@
 img {
   max-width: 100%;
   height: auto; }
+  img.alignright {
+    float: right;
+    margin: 0 0 1em 1em; }
+  img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0; }
+  img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+a img.alignright {
+  float: right;
+  margin: 0 0 1em 1em; }
+a img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0; }
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .ratio {
   position: relative;
@@ -1919,6 +1940,8 @@ div#main {
       width: 100%;
       margin-right: 0;
       margin-top: 2.8rem; }
+    .page-container .page-contents .page-contents__inner .page-contents__inner__text {
+      overflow: scroll; }
 
 @media (min-width: 768px) {
   .page-container .page-headline {
