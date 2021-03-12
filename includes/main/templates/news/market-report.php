@@ -38,6 +38,9 @@ if ( $the_query->have_posts() ) {
 		echo '<h5 class="black-3">' . get_the_content() . '</h5>';
 		echo '</div>';
 	}
+	echo '<div class="market-report__button">';
+	echo '<a href="/category/market-reports/" class="button">View all market reports</a>';
+	echo '</div>';
 	
 	echo '</div>';
 
