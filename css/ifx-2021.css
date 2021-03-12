@@ -2012,6 +2012,17 @@ div#main {
     justify-content: center; }
     .ifx-row-news .pagination-links > * {
       margin: 0 0.3rem; }
+    .ifx-row-news .pagination-links .navigation {
+      margin: 0; }
+      .ifx-row-news .pagination-links .navigation ul {
+        margin: 0;
+        padding: 0; }
+        .ifx-row-news .pagination-links .navigation ul li {
+          list-style-type: none;
+          display: inline-block;
+          margin-right: 1rem; }
+          .ifx-row-news .pagination-links .navigation ul li:last-child {
+            margin-right: 0; }
 
 @media (min-width: 768px) {
   .ifx-row-news .news__introduction {
@@ -2045,6 +2056,18 @@ div#main {
     margin-bottom: 2.5rem; }
     .ifx-row-market-report .news-market-report .market-report__content h5 p:last-child {
       margin-bottom: 0; }
+  .ifx-row-market-report .news-market-report .market-report__button {
+    text-align: center;
+    margin-top: 3.5rem; }
+    .ifx-row-market-report .news-market-report .market-report__button a {
+      width: 100%;
+      max-width: 448px;
+      margin-right: 0;
+      background-color: #fafcfe;
+      color: #4a90e2;
+      border-color: #fafcfe;
+      box-shadow: 0 4px 8px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+      font-weight: 700; }
 
 @media (min-width: 768px) {
   .ifx-row-market-report .news-market-report .market-report__content h5 {
@@ -2056,6 +2079,9 @@ div#main {
     .ifx-row-market-report .news-market-report .market-report__title .caps {
       margin-bottom: 1.4rem; }
     .ifx-row-market-report .news-market-report .market-report__title hr {
-      margin-top: 1.8rem; } }
+      margin-top: 1.8rem; }
+    .ifx-row-market-report .news-market-report .market-report__button a {
+      padding: 1.65rem 0;
+      font-size: 1.8rem; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
