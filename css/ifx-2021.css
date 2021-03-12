@@ -1800,23 +1800,24 @@ div#main {
   .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr {
     border-top: 1px solid #f7f8f8; }
     .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td {
-      padding: 2.3rem 0;
+      padding: 1rem 0;
       color: #2a3a46;
       position: relative; }
       .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td:first-child {
-        padding-left: 3rem;
-        display: flex; }
+        padding-left: 1.5rem;
+        display: flex;
+        align-items: center; }
       .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td .currency-flag {
-        width: 26px;
-        height: 26px;
+        width: 18px;
+        height: 18px;
         background-position: center;
         border-radius: 50%;
         background-size: cover; }
         .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td .currency-flag:first-child {
-          margin-right: 1rem; }
+          margin-right: 0.5rem; }
         .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td .currency-flag:nth-child(2) {
-          margin-right: 1rem;
-          margin-left: 2rem; }
+          margin-right: 0.5rem;
+          margin-left: 1rem; }
       .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td:before {
         display: inline-block;
         font-style: normal;
@@ -1828,7 +1829,7 @@ div#main {
         position: absolute;
         top: auto;
         bottom: auto;
-        left: -1.8rem; }
+        left: -1rem; }
       .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.down {
         color: #dc3b42; }
         .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.down:before {
@@ -1837,13 +1838,48 @@ div#main {
         color: #00e2af; }
         .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.up:before {
           content: "\f0d8"; }
+      .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.high, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.low, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.open, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.time {
+        display: none; }
 .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th {
-  font-size: 1.8rem;
-  padding: 2.3rem 0;
+  font-size: 1.6rem;
+  padding: 1rem 0;
   color: #2a3a46; }
   .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th:first-child {
-    padding-left: 3rem; }
+    padding-left: 1.5rem; }
+  .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#high, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#low, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#open, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#time {
+    display: none; }
 
+@media (min-width: 768px) {
+  .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td {
+    padding: 2.3rem 0;
+    width: 139px; }
+    .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td:first-child {
+      padding-left: 3rem;
+      width: 258px; }
+    .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td .currency-flag {
+      width: 26px;
+      height: 26px; }
+      .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td .currency-flag:first-child {
+        margin-right: 1rem; }
+      .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td .currency-flag:nth-child(2) {
+        margin-right: 1rem;
+        margin-left: 2rem; }
+    .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td:before {
+      left: -1.8rem; }
+    .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.high, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.low, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.time {
+      display: table-cell; }
+  .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th {
+    font-size: 1.8rem;
+    padding: 2.3rem 0; }
+    .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th:first-child {
+      padding-left: 3rem; }
+    .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#high, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#low, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#time {
+      display: table-cell; } }
+@media (min-width: 992px) {
+  .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.open {
+    display: table-cell; }
+  .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#open {
+    display: table-cell; } }
 .page-container {
   position: relative;
   z-index: 2;
