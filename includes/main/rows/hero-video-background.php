@@ -5,6 +5,11 @@ $text = false;
 $text = get_sub_field('text');
 $heroHeight = false;
 $heroHeight = get_sub_field('hero_height');
+
+$videoModal = false;
+$videoModal = get_sub_field('video_modal');
+
+
 // If hero height is set to default 100, reset the variable to false
 if ($heroHeight == '100') {
 	$heroHeight = false;
@@ -46,6 +51,13 @@ echo '</style>';
 						echo '<div class="row justify-content-md-center">';
 							echo '<div class="col-12 col-md-6">';
 								echo '<h5 class="black-3">' . $text . '</h5>';
+								if ($videoModal) {
+									$buttonText = false;
+									$buttonText = get_sub_field('button_text');
+									echo '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoBGModal">
+												' . $buttonText . ' <span><i class="fas fa-play"></i></span>
+												</button>';
+								}
 							echo '</div>';
 						echo '</div>';
 					echo '</div>';
