@@ -59,6 +59,9 @@ echo '</div>';
 echo '</div>';
 echo '</footer>';
 
+/*Include any modals*/
+include __DIR__ . '/includes/footer/modals.php';
+
 wp_footer();
 
 echo '</body>';
