@@ -25,6 +25,15 @@ if (is_page_template('template-form.php')) {
 	$title = get_the_title();
 	$pageClass = 'page-single-post';
 	$wrapperClass = 'col-11 col-md-10';
+} elseif(is_category()) {
+	$thisCat = get_queried_object();
+	$title = $thisCat->name;
+	$text = $thisCat->category_description;
+	$wrapperClass = 'col-12 col-md-7';
+} elseif(is_page_template('template-basic-page.php')) {
+	$title = get_the_title();
+	$wrapperClass = 'col-11 col-md-10';
+	$pageClass = 'template-basic-page';
 } else {
 	$wrapperClass = 'col-12 col-md-10';
 }
@@ -47,13 +56,13 @@ if (is_page_template('template-form.php')) {
 		echo '<div class="caps weight-700">' . $location . '</div>';
 	}
 	echo ifx_social_sharing_buttons();
-} elseif (is_page_template('template-news.php')) {
+} elseif (is_page_template('template-news.php') || is_category()) {
 	if ($text) {
 		echo '<h5 class="black-3">' . $text . '</h5>';
 	}
-} else {
+} elseif(is_singular('post')) {
 	echo ifx_social_sharing_buttons();
-}
+} else {}
 echo '</div>';
 echo '</div>';
 echo '</div>';
