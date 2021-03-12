@@ -10,29 +10,44 @@ $subheading = get_sub_field('subheading');
 $features = false;
 $features = get_sub_field('features');
 
-echo '<div class="ifx-row-wrapper">';
+echo '<div class="ifx-row-wrapper dark-wrapper-top">';
 echo '<div class="container">';
 
 echo '<div class="dark__wrapper">';
-
 echo '<div class="row">';
-echo '<div class="col-12 col-lg-7">';
+
+echo '<div class="col-12 col-lg-7 col-xl-5">';
 echo '<div class="dark__text-col">';
 if ($preheading) {
 	echo '<div class="caps">' . $preheading . '</div>';
 }
 if ($heading) {
-	echo '<h2 class="white">' . $heading . '</h2>';
+	echo '<h2>' . $heading . '</h2>';
 }
 echo '</div>';
 echo '</div>';
 echo '</div>';
 
-echo '<div class="row">';
-echo '<div class="col-12 col-lg-6 d-none d-md-none d-lg-block d-xl-block">';
+echo '</div>';
+
+echo '</div>';
+echo '</div>';
+
+
+// Middle Section
+
+
+
+
+echo '<div class="ifx-row-wrapper dark-wrapper-bottom">';
+echo '<div class="container">';
+
+echo '<div class="dark__wrapper">';
+echo '<div class="row align-items-lg-center justify-content-lg-between">';
+echo '<div class="col-12 col-lg-6 col-xl-4 d-none d-md-none d-lg-block d-xl-block">';
 echo '<div class="dark__text-col">';
-echo '<h4>Streamline your company’s mass payment processes. Pre-screen and validate beneficiary data.</h4>';
-echo '<div class="caps">Jane Adams - CEO Miki Travel</div>';
+echo '<h4>' . $text . '</h4>';
+echo '<div class="caps">' . $subheading . '</div>';
 echo '</div>';
 echo '</div>';
 echo '<div class="col-12 col-lg-6">';
