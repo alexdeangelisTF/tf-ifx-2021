@@ -47,7 +47,7 @@ if (is_page_template('template-form.php')) {
 			echo $careersPackage;
 		}
 	} else {
-		echo get_the_content();
+		echo wpautop(get_the_content());
 	}
 	echo '</div>';
 
