@@ -270,7 +270,9 @@ input[type=submit],
       margin-bottom: 4rem; }
     [class$="__introduction"] a.button {
       margin-top: 4rem; } }
-body {
+body,
+td,
+th {
   color: #69757d; }
 
 h1 {
