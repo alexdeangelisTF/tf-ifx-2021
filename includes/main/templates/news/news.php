@@ -12,7 +12,7 @@ echo '<div class="row">';
 
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $args = array(
-	'posts_per_page'    => 5,
+	'posts_per_page'    => get_option( 'posts_per_page' ),
 	'post_type'         => 'post',
 	'category_name'			=> $templateName,
 	'paged' => $paged,
