@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="528px" viewBox="0 0 1920 528" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <title>Path 2 Copy</title>
+    <g id="Refining---Modules" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="x3-dark-Vertical-carousel">
+            <rect fill="#FFFFFF" x="0" y="0" width="1920" height="960"></rect>
+            <g id="Dark-block" transform="translate(-16.000000, -26.437500)">
+                <path d="M16,986.4375 L806.469374,986.4375 C825.386412,986.4375 841.968987,973.791065 846.973183,955.54792 L948.526817,585.32708 C953.531013,567.083935 970.113588,554.4375 989.030626,554.4375 L1936,554.4375 L1936,554.4375 L1936,26.4375 L16,26.4375 L16,646.61293 L16,986.4375 Z" id="Path-2" fill="#2A3A46"></path>
+                <path d="M0,553.4375 L1280.46937,553.4375 C1299.38641,553.4375 1315.96899,540.791065 1320.97318,522.54792 L1422.52682,152.32708 C1427.53101,134.083935 1444.11359,121.4375 1463.03063,121.4375 L1958.90625,121.4375 L1958.90625,121.4375 L1958.90625,-2.27373675e-13 L0,-2.27373675e-13 L0,553.4375 Z" id="Path-2" fill="#3A4A58" opacity="0.617094494"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -37,14 +37,18 @@ echo '</div>';
 // Middle Section
 
 
-
+echo '<div class="ifx-row-wrapper dark-wrapper-middle">';
+echo '<div class="dark-wrapper-middle__inner">';
+echo '<div class="caps">traditional efficiency</div>';
+echo '</div>';
+echo '</div>';
 
 echo '<div class="ifx-row-wrapper dark-wrapper-bottom">';
 echo '<div class="container">';
 
 echo '<div class="dark__wrapper">';
 echo '<div class="row align-items-lg-center justify-content-lg-between">';
-echo '<div class="col-12 col-lg-6 col-xl-4 d-none d-md-none d-lg-block d-xl-block">';
+echo '<div class="col-12 col-lg-4 d-none d-md-none d-lg-block d-xl-block">';
 echo '<div class="dark__text-col">';
 echo '<h4>' . $text . '</h4>';
 echo '<div class="caps">' . $subheading . '</div>';
