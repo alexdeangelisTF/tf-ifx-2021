@@ -9,6 +9,8 @@ $subheading = false;
 $subheading = get_sub_field('subheading');
 $features = false;
 $features = get_sub_field('features');
+$blueBoxOverlay = false;
+$blueBoxOverlay = get_sub_field('blue_box_overlay');
 
 echo '<div class="ifx-row-wrapper dark-wrapper-top">';
 echo '<div class="container">';
@@ -36,12 +38,20 @@ echo '</div>';
 
 // Middle Section
 
+if ($blueBoxOverlay) {
 
-echo '<div class="ifx-row-wrapper dark-wrapper-middle">';
-echo '<div class="dark-wrapper-middle__inner">';
-echo '<div class="caps">traditional efficiency</div>';
-echo '</div>';
-echo '</div>';
+	$blueBoxOverlayHeading = false;
+	$blueBoxOverlayHeading = get_sub_field('blue_box_overlay_heading');
+	$blueBoxOverlayImageID = false;
+	$blueBoxOverlayImageID = get_sub_field('blue_box_overlay_image');
+
+	echo '<div class="ifx-row-wrapper dark-wrapper-middle">';
+	echo '<div class="dark-wrapper-middle__inner">';
+	echo wp_get_attachment_image($blueBoxOverlayImageID, 'medium');
+	echo '<div class="caps">' . $blueBoxOverlayHeading . '</div>';
+	echo '</div>';
+	echo '</div>';
+}
 
 echo '<div class="ifx-row-wrapper dark-wrapper-bottom">';
 echo '<div class="container">';
