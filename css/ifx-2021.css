@@ -620,6 +620,8 @@ header {
       header ul li ul li a.dropdown-item {
         white-space: nowrap;
         padding: 1.4rem 3rem; }
+        header ul li ul li a.dropdown-item:hover {
+          background-color: transparent; }
     header ul li a.dropdown-toggle:after {
       display: none; }
     header ul li:last-child {
