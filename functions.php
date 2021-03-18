@@ -33,7 +33,7 @@ function your_scripts() {
 	/*GlideJS - Carousel*/
 	wp_enqueue_script('glidejs', 'https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js', array(), null, false);
 	/*Rellax JS - Parallax*/
-	//wp_enqueue_script('rellax', 'https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js', array(), null, true);
+	wp_enqueue_script('rellax', 'https://cdn.jsdelivr.net/npm/rellax@1.12.1/rellax.min.js', array(), null, true);
 	/* IFX 2021 JS */
   wp_enqueue_script('ifx-2021-js', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'), null, true);
 }
