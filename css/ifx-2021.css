@@ -721,9 +721,16 @@ div#main {
     z-index: 2; }
     div#main section:first-of-type {
       /*padding-top:1.5rem;*/ }
-    div#main section .ifx-row .ifx-row-wrapper {
-      padding: 3rem 0;
-      background-repeat: no-repeat; }
+    div#main section .ifx-row {
+      position: relative; }
+      div#main section .ifx-row .ifx-row-wrapper {
+        padding: 3rem 0;
+        background-repeat: no-repeat; }
+      div#main section .ifx-row .ifx-row-wrapper-bg {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        background-repeat: no-repeat; }
     div#main section.overlap {
       z-index: 3; }
   div#main.reverse-header section:first-of-type h1, div#main.reverse-header section:first-of-type h2, div#main.reverse-header section:first-of-type h3, div#main.reverse-header section:first-of-type h4, div#main.reverse-header section:first-of-type h5, div#main.reverse-header section:first-of-type h6, div#main.reverse-header section:first-of-type p, div#main.reverse-header section:first-of-type a {
