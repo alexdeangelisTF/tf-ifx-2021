@@ -66,5 +66,14 @@
 		window.removeEventListener('scroll', noScroll);
 	});
 	
+	/* Rellax JS */
+  //var rellax = new Rellax('.rellax');
+	// Also can pass in optional settings block
+  var rellax = new Rellax('.rellax', {
+    speed: 2,
+    //wrapper: null,
+    //round: true,
+    //vertical: true,
+  });
 	
 })( jQuery );
