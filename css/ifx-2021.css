@@ -2370,5 +2370,16 @@ div#main {
     .ifx-row-market-report .news-market-report .market-report__button a {
       padding: 1.65rem 0;
       font-size: 1.8rem; } }
+.template-404 .template-404-wrap {
+  padding: 3rem 0; }
+  .template-404 .template-404-wrap .template-404__introduction {
+    padding-top: 3rem; }
+
+@media (min-width: 992px) {
+  .template-404 .template-404-wrap {
+    padding: 7.5rem 0; } }
+@media (min-width: 1440px) {
+  .template-404 .template-404__introduction h1 {
+    width: 75%; } }
 
 /*# sourceMappingURL=ifx-2021.css.map */
