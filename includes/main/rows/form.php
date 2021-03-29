@@ -14,9 +14,9 @@ echo '<div class="container">';
 
 echo '<div class="form__wrapper">';
 
-echo '<div class="row">';
+echo '<div class="row justify-content-lg-between">';
 
-echo '<div class="col-12 col-md-8 col-lg-6">';
+echo '<div class="col-12 col-md-8 col-lg-5">';
 echo '<div class="form__introduction">';
 if ($preheading) {
 	echo '<div class="caps">';
