@@ -682,11 +682,12 @@ footer {
     -ms-flex-pack: end;
     justify-content: flex-end; }
     footer .social .icon {
-      width: 4rem;
+      width: 100%;
+      max-width: 10rem;
       text-align: center; }
       footer .social .icon i {
         color: #4a90e2;
-        font-size: 2rem; }
+        font-size: 1.7rem; }
         footer .social .icon i:hover {
           color: #69757d; }
   footer .logo {
