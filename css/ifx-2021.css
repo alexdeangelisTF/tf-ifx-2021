@@ -772,11 +772,14 @@ div#main {
       color: #3b7cdb; }
 
 @media (min-width: 768px) {
-  .ifx-row-hero .image-absolute {
-    position: relative; }
-    .ifx-row-hero .image-absolute img {
-      position: absolute;
-      top: 0; } }
+  .ifx-row-hero .hero__image {
+    text-align: right; }
+    .ifx-row-hero .hero__image.image-absolute {
+      position: relative; }
+      .ifx-row-hero .hero__image.image-absolute img {
+        position: absolute;
+        top: 0;
+        right: 0; } }
 .ifx-row-image_text .image-text__introduction {
   margin-bottom: 0; }
 
@@ -1053,9 +1056,11 @@ div#main {
   .ifx-row-image_text_overlap .image-text-overlap__wrapper .two-content-mobile .image-text-overlap__introduction {
     margin: 0; }
 .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__introduction h2 {
-  margin: 0; }
+  margin: 0;
+  margin-bottom: 2rem; }
 .ifx-row-image_text_overlap .image-text-overlap__wrapper .image-text-overlap__introduction h5 {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  margin-top: 1.5rem; }
 .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .row__variation-intro {
   margin-bottom: 3rem; }
 .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction img {
@@ -1069,8 +1074,8 @@ div#main {
   box-shadow: 0 4px 8px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1); }
 .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction hr {
   border: solid 0.1rem #f7f8f8;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem; }
+  margin-top: 0;
+  margin-bottom: 0; }
 
 @media (min-width: 768px) {
   .ifx-row-image_text_overlap .image-text-overlap__wrapper .col-image {
