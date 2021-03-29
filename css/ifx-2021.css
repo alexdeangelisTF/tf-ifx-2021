@@ -984,6 +984,19 @@ div#main {
         transform: rotate(0deg); }
     .ifx-row-faqs .faqs__questions .card .card-body {
       padding: 2.2rem 0 0; }
+      .ifx-row-faqs .faqs__questions .card .card-body h6 p {
+        font-size: initial; }
+      .ifx-row-faqs .faqs__questions .card .card-body h6 li {
+        list-style-type: none;
+        position: relative;
+        margin-bottom: 1rem; }
+        .ifx-row-faqs .faqs__questions .card .card-body h6 li:before {
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          content: '\f00c';
+          margin: 0 0 0 -3.3rem;
+          color: #ff5657;
+          position: absolute; }
     .ifx-row-faqs .faqs__questions .card.open {
       -webkit-box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
       box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1); }
@@ -1287,20 +1300,22 @@ div#main {
         display: none; } }
 .ifx-row-controls_carousel .controls-carousel__wrapper .glide {
   cursor: auto; }
-.ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content {
-  margin-top: 2rem; }
-  .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content h2 {
-    margin-bottom: 2.5rem; }
-  .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content .caps {
-    margin-bottom: 1rem; }
-.ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__image img {
-  -webkit-box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
-  box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
-  height: 248px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: 20% 20%;
-  object-position: 20% 20%; }
+.ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides {
+  overflow: visible; }
+  .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content {
+    margin-top: 2rem; }
+    .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content h2 {
+      margin-bottom: 2.5rem; }
+    .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content .caps {
+      margin-bottom: 1rem; }
+  .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__image img {
+    -webkit-box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+    box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+    height: 248px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: 20% 20%;
+    object-position: 20% 20%; }
 .ifx-row-controls_carousel .controls-carousel__wrapper .glide__bullets {
   position: relative;
   bottom: 0; }
