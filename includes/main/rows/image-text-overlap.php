@@ -43,7 +43,7 @@ if ($enableVariation) {
 	$introText = get_sub_field('intro_text');
 	
 	echo '<div class="row align-items-md-end row__variation-intro">';
-	echo '<div class="col-12 col-lg-5">';
+	echo '<div class="col-12 col-lg-6">';
 	if ($introPreheading) {
 		echo '<div class="caps">' . $introPreheading . '</div>';
 	}
