@@ -1450,7 +1450,10 @@ div#main {
         bottom: -4rem;
         -webkit-transition: all 0.5s;
         -o-transition: all 0.5s;
-        transition: all 0.5s; }
+        transition: all 0.5s;
+        letter-spacing: 0.2rem;
+        font-weight: 700;
+        white-space: nowrap; }
       .ifx-row-controls_carousel .controls-carousel__wrapper .slide-controls button:last-child {
         margin-right: 0; }
       .ifx-row-controls_carousel .controls-carousel__wrapper .slide-controls button.active {
