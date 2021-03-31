@@ -52,7 +52,7 @@ if ($slides) {
 	echo '<style>';
 	$slideCount = 1;
 	foreach($slides as $slide) {
-		echo '.ifx-row-controls_carousel.ifx-row-7 .slide-controls button:nth-child(' . $slideCount . '):after {';
+		echo '.ifx-row-controls_carousel.ifx-row-' . $rowCount . ' .slide-controls button:nth-child(' . $slideCount . '):after {';
 		echo 'content:"' . $slide['control_text'] . '"';
 		echo '}';
 		$slideCount++;
@@ -71,7 +71,17 @@ if ($slides) {
 		}
 		$slideCountMinus = $slideCount-1;
 		echo '<button class="' . $active . '" data-glide-dir="=' . $slideCountMinus . '">';
-		echo '<div class="circle"><div class="circle__inner"></div>';
+		
+		if ($slideCount == 1) {
+			echo '<img src="' . get_template_directory_uri() . '/img/row-controls-carousel/spot.svg">';
+		} elseif($slideCount == 2) {
+			echo '<img src="' . get_template_directory_uri() . '/img/row-controls-carousel/forward.svg">';
+		} elseif($slideCount == 3) {
+			echo '<img src="' . get_template_directory_uri() . '/img/row-controls-carousel/limit.svg">';
+		} elseif($slideCount == 4) {
+			echo '<img src="' . get_template_directory_uri() . '/img/row-controls-carousel/stop-loss.svg">';
+		} else {}
+		
 		echo '</button>';
 		$slideCount++;
 	}
