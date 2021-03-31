@@ -1311,9 +1311,8 @@ div#main {
   .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__image img {
     -webkit-box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
     box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
-    height: 248px;
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-fit: contain;
+    object-fit: contain;
     -o-object-position: 20% 20%;
     object-position: 20% 20%; }
 .ifx-row-controls_carousel .controls-carousel__wrapper .glide__bullets {
@@ -1376,7 +1375,9 @@ div#main {
     .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__image {
       padding: 0 2.5rem; }
       .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__image img {
-        height: inherit; }
+        height: inherit;
+        -o-object-fit: cover;
+        object-fit: cover; }
   .ifx-row-controls_carousel .controls-carousel__wrapper .slide-controls {
     margin-bottom: 6rem; }
     .ifx-row-controls_carousel .controls-carousel__wrapper .slide-controls button {
@@ -1455,6 +1456,9 @@ div#main {
     margin-bottom: 0; }
     .ifx-row-controls_carousel .controls-carousel__wrapper .slide-controls button:after {
       bottom: -5rem; } }
+@media (min-width: 1200px) {
+  .ifx-row-controls_carousel .controls-carousel__wrapper .glide__track {
+    padding-bottom: 9rem; } }
 .ifx-row-directors {
   background-color: #fafcfe; }
   .ifx-row-directors .directors__wrapper .directors__introduction {
