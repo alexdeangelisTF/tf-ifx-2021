@@ -5,6 +5,8 @@ $backgroundImageID = false;
 $backgroundImageID = $customBackgroundValues['background_image'];
 $backgroundPosition = false;
 $backgroundPosition = $customBackgroundValues['background_position'];
+$backgroundSize = false;
+$backgroundSize = $customBackgroundValues['background_size'];
 $backgroundParallax = false;
 $backgroundParallax = $customBackgroundValues['background_parallax'];
 if ($backgroundParallax) {
@@ -17,10 +19,14 @@ if ($backgroundParallax) {
 
 if ($backgroundImageID) {
 
+	if (!$backgroundSize) {
+		$backgroundSize = 'auto';
+	}
 	echo '<style>';
 	echo 'div#main section .ifx-row.ifx-row-' . $rowCount . ' .ifx-row-wrapper-bg {';
 	echo 'background-image:url( ' . wp_get_attachment_url($backgroundImageID) . ');';
 	echo 'background-position: ' . $backgroundPosition . ';';
+	echo 'background-size:' . $backgroundSize . ';';
 	echo '}';
 	echo '</style>';
 
