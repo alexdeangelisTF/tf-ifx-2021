@@ -1867,7 +1867,9 @@ div#main {
     background-repeat: no-repeat;
     background-position: center; }
   .ifx-row-cta_card .cta-card__wrapper.video .row {
-    position: relative; }
+    position: relative;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem; }
     .ifx-row-cta_card .cta-card__wrapper.video .row video {
       position: absolute;
       width: 100%;
