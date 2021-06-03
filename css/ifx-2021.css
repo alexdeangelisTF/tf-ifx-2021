@@ -1019,22 +1019,25 @@ div#main {
   text-align: center;
   margin-bottom: 2.4rem; }
   .ifx-row-contact_tiles .contact-tile .contact-tile__content {
-    padding: 3rem 4.8rem 3rem; }
+    padding: 3rem 1.6rem 3rem; }
     .ifx-row-contact_tiles .contact-tile .contact-tile__content .contact-tile__image {
-      margin-bottom: 1rem; }
+      margin-bottom: 2rem; }
       .ifx-row-contact_tiles .contact-tile .contact-tile__content .contact-tile__image img {
         width: 40px;
         height: 40px;
         -o-object-fit: cover;
         object-fit: cover; }
     .ifx-row-contact_tiles .contact-tile .contact-tile__content h6 {
-      margin: 0; }
+      margin: 0;
+      line-height: 2.4rem; }
+    .ifx-row-contact_tiles .contact-tile .contact-tile__content h4 {
+      font-size: 2.2rem; }
   .ifx-row-contact_tiles .contact-tile .contact-tile__link a.button {
     width: 100%;
     background-color: #fafcfe;
     color: #4a90e2;
     font-size: 1.8rem;
-    padding: 1.85rem;
+    padding: 1rem 1.85rem;
     border-radius: 0 0 0.8rem 0.8rem;
     border-color: #fafcfe; }
   .ifx-row-contact_tiles .contact-tile .contact-tile__link a i {
@@ -1045,7 +1048,16 @@ div#main {
 
 @media (min-width: 992px) {
   .ifx-row-contact_tiles .contact-tile {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+    .ifx-row-contact_tiles .contact-tile .contact-tile__content h4 {
+      font-size: 2.8rem; }
+    .ifx-row-contact_tiles .contact-tile .contact-tile__content .contact-tile__image {
+      margin-bottom: 0.5rem; }
+      .ifx-row-contact_tiles .contact-tile .contact-tile__content .contact-tile__image img {
+        width: 6.4rem;
+        height: 6.4rem; }
+    .ifx-row-contact_tiles .contact-tile .contact-tile__link a.button {
+      padding: 1.65rem 1.85rem; } }
 @media (min-width: 768px) {
   .ifx-row-contact_tiles .contact-tile .contact-tile__content {
     padding: 4.8rem 4.8rem 4rem; } }
