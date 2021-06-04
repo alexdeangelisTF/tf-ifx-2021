@@ -387,6 +387,16 @@ header {
       header nav .menu-wrapper .navbar-collapse .logo {
         width: 20%;
         text-align: center; }
+        header nav .menu-wrapper .navbar-collapse .logo a img {
+          -webkit-transition: all .3s;
+          transition: all .3s;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          opacity: 1; }
+        header nav .menu-wrapper .navbar-collapse .logo a:hover img {
+          -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+          opacity: .85; }
       header nav .menu-wrapper .navbar-collapse .ifx-right-menu ul {
         -webkit-box-pack: end;
         -ms-flex-pack: end;
