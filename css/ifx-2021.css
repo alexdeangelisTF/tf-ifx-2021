@@ -350,23 +350,44 @@ input[type=submit],
 .navbar-nav li.button a.nav-link {
   color: #ffffff;
   background-color: #ff5657;
-  border: 2px solid #ff5657; }
+  border: 0.3rem solid #ff5657; }
   button:hover,
   a.button:hover,
   input[type=submit]:hover,
   .navbar-nav li.button a.nav-link:hover {
     color: #ffffff;
-    background-color: #ff5657;
-    border: 2px solid #ff5657; }
+    background-color: #d9494a;
+    border: 0.3rem solid #d9494a; }
+  button:focus, button:active,
+  a.button:focus,
+  a.button:active,
+  input[type=submit]:focus,
+  input[type=submit]:active,
+  .navbar-nav li.button a.nav-link:focus,
+  .navbar-nav li.button a.nav-link:active {
+    border: 0.3rem solid rgba(255, 255, 255, 0.2);
+    background-color: #d9494a; }
 
 .navbar-nav li.button.white a.nav-link {
   color: #2a3a46;
   background-color: #fafcfe;
-  border: 2px solid #fafcfe; }
+  border: 0.3rem solid #fafcfe; }
+  .navbar-nav li.button.white a.nav-link:hover {
+    background-color: rgba(250, 252, 254, 0.7);
+    border: 0.3rem solid transparent; }
+  .navbar-nav li.button.white a.nav-link:focus, .navbar-nav li.button.white a.nav-link:active {
+    background-color: rgba(250, 252, 254, 0.9);
+    border: 0.3rem solid rgba(255, 255, 255, 0.5); }
 .navbar-nav li.button.blue a.nav-link {
   color: #ffffff;
   background-color: #4a90e2;
-  border: 2px solid #4a90e2; }
+  border: 0.3rem solid #4a90e2; }
+  .navbar-nav li.button.blue a.nav-link:hover {
+    background-color: #3b7cdb;
+    border: 0.3rem solid #3b7cdb; }
+  .navbar-nav li.button.blue a.nav-link:focus, .navbar-nav li.button.blue a.nav-link:active {
+    background-color: #3b7cdb;
+    border: 0.3rem solid rgba(255, 255, 255, 0.2); }
 
 a {
   color: #2a3a46; }
