@@ -456,9 +456,14 @@ header {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     content: ' ';
-    background-size: 24px 24px;
-    height: 24px;
-    width: 24px; }
+    background-size: 2.4rem 2.4rem;
+    height: 2.4rem;
+    width: 2.4rem; }
+    @media (min-width: 992px) {
+      header ul li ul li a:before {
+        background-size: 4.8rem 4.8rem;
+        height: 4.8rem;
+        width: 4.8rem; } }
   header ul li ul li a.dropdown-item {
     font-weight: 700;
     color: #222222;
