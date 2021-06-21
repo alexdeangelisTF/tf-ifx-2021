@@ -1401,6 +1401,9 @@ div#main {
     object-fit: contain;
     -o-object-position: 20% 20%;
     object-position: 20% 20%; }
+    @media (max-width: 767px) {
+      .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__image img {
+        box-shadow: none; } }
 .ifx-row-controls_carousel .controls-carousel__wrapper .glide__bullets {
   position: relative;
   bottom: 0; }
