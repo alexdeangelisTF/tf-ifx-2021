@@ -916,14 +916,14 @@ div#main {
     .ifx-row-icon_text .icon-text__wrapper .icon-text__single:first-child {
       margin-top: 0; }
     .ifx-row-icon_text .icon-text__wrapper .icon-text__single .icon-text__single__icon img {
-      width: 4.8rem;
-      height: 4.8rem;
+      width: 4rem;
+      height: 4rem;
       -o-object-fit: contain;
       object-fit: contain; }
       @media (min-width: 992px) {
         .ifx-row-icon_text .icon-text__wrapper .icon-text__single .icon-text__single__icon img {
-          width: 6.4rem;
-          height: 6.4rem; } }
+          width: 4.8rem;
+          height: 4.8rem; } }
     .ifx-row-icon_text .icon-text__wrapper .icon-text__single .icon-text__single__heading h4 {
       margin-bottom: 1.5rem; }
 
@@ -968,14 +968,14 @@ div#main {
   .ifx-row-tiles .tile .tile__image {
     margin-bottom: 1rem; }
     .ifx-row-tiles .tile .tile__image img {
-      width: 4.8rem;
-      height: 4.8rem;
+      width: 4rem;
+      height: 4rem;
       -o-object-fit: cover;
       object-fit: cover; }
       @media (min-width: 992px) {
         .ifx-row-tiles .tile .tile__image img {
-          width: 6.4rem;
-          height: 6.4rem; } }
+          width: 4.8rem;
+          height: 4.8rem; } }
 
 @media (max-width: 991px) {
   .ifx-row-tiles .tiles__wrapper .tile {
@@ -1071,8 +1071,8 @@ div#main {
     .ifx-row-contact_tiles .contact-tile .contact-tile__content .contact-tile__image {
       margin-bottom: 2rem; }
       .ifx-row-contact_tiles .contact-tile .contact-tile__content .contact-tile__image img {
-        width: 4.8rem;
-        height: 4.8rem;
+        width: 4rem;
+        height: 4rem;
         -o-object-fit: cover;
         object-fit: cover; }
     .ifx-row-contact_tiles .contact-tile .contact-tile__content h6 {
@@ -1111,8 +1111,8 @@ div#main {
     .ifx-row-contact_tiles .contact-tile .contact-tile__content .contact-tile__image {
       margin-bottom: 0.5rem; }
       .ifx-row-contact_tiles .contact-tile .contact-tile__content .contact-tile__image img {
-        width: 6.4rem;
-        height: 6.4rem; }
+        width: 4.8rem;
+        height: 4.8rem; }
     .ifx-row-contact_tiles .contact-tile .contact-tile__link a.button {
       padding: 1.65rem 1.85rem; } }
 @media (min-width: 768px) {
@@ -1602,6 +1602,65 @@ div#main {
       margin-top: 2.4rem; }
   .ifx-row-directors .directors__wrapper .directors-row .col-12 > a:hover {
     text-decoration: none; }
+  .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide {
+    padding: 0 2.5rem; }
+    .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single {
+      position: relative; }
+      .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single .glide__arrows {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        position: absolute;
+        padding-top: 2rem; }
+        .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single .glide__arrows button {
+          position: relative;
+          min-width: auto;
+          background-color: #ffffff;
+          -webkit-box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+          box-shadow: 0 24px 30px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+          border-radius: 50%;
+          left: auto;
+          right: auto;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          padding: 0;
+          width: 40px;
+          height: 40px;
+          -webkit-transform: inherit;
+          -ms-transform: inherit;
+          transform: inherit; }
+          .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single .glide__arrows button img {
+            width: 18px;
+            height: 18px; }
+          .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single .glide__arrows button.glide__arrow--left img {
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+          .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single .glide__arrows button.glide__arrow--right img {
+            -webkit-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+      .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single img {
+        height: 24.8rem; }
+      .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single h4 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 0.82;
+        margin-top: 3rem;
+        width: 70%; }
+      .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single h6 {
+        line-height: 1.5; }
 
 @media (max-width: 991px) {
   .ifx-row-directors .directors__wrapper .director-single {
