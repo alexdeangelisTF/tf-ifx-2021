@@ -40,6 +40,9 @@ echo '<div class="row directors-row justify-content-md-center">';
 
 foreach($directors as $director) {
 	echo '<div class="col-12 col-md-6 col-lg-4">';
+	if ($director['link']) {
+		echo '<a href="https://' . $director['link'] . '" target="_blank">';
+	}
 	echo '<div class="director-single">';
 	echo  wp_get_attachment_image($director['image'], 'full');
 	echo '<h4>' . $director['name'] . '</h4>';
@@ -47,6 +50,9 @@ foreach($directors as $director) {
 	echo '<h6 class="black-3">' . $director['text'] . '</h6>';
 	echo '</div>';
 	echo '</div>';
+	if ($director['link']) {
+		echo '</a>';
+	}
 }
 
 echo '</div>';

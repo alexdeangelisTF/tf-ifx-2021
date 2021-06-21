@@ -1559,6 +1559,8 @@ div#main {
       object-fit: cover; }
     .ifx-row-directors .directors__wrapper .director-single h4 {
       margin-top: 2.4rem; }
+  .ifx-row-directors .directors__wrapper .directors-row .col-12 > a:hover {
+    text-decoration: none; }
 
 @media (max-width: 991px) {
   .ifx-row-directors .directors__wrapper .director-single {
