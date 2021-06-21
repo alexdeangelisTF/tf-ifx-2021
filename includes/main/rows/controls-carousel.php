@@ -118,6 +118,16 @@ if ($slides) {
 		echo '</div>';
 		echo '<div class="col-12 col-md-5 d-md-flex align-items-md-center">';
 		echo '<div class="slide__content">';
+		
+		echo '<div class="d-md-none d-lg-none d-xl-none glide__arrows" data-glide-el="controls">';
+		echo '<button class="glide__arrow glide__arrow--left" data-glide-dir="<">';
+		echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
+		echo '</button>';
+		echo '<button class="glide__arrow glide__arrow--right" data-glide-dir=">">';
+		echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
+		echo '</button>';
+		echo '</div>';
+		
 		if ($preheading) {
 			echo '<div class="caps">';
 			echo $preheading;
@@ -139,19 +149,10 @@ if ($slides) {
 		echo '</div>';
 		$slideCount++;
 	}
-	echo '</ul>';
-	echo '</div>';
-	echo '</div>';
 	
-	echo '<div class="col-12 d-md-none d-lg-none d-xl-none">';
-	echo '<div class="glide__arrows" data-glide-el="controls">';
-  echo '<button class="glide__arrow glide__arrow--left" data-glide-dir="<">';
-	echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
-	echo '</button>';
-  echo '<button class="glide__arrow glide__arrow--right" data-glide-dir=">">';
-	echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
-	echo '</button>';
-  echo '</div>';
+	echo '</ul>';
+	
+	echo '</div>';
 	echo '</div>';
 	
 	echo '</div>';
