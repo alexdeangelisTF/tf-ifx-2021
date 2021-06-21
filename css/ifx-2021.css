@@ -1249,13 +1249,17 @@ div#main {
         border: 0.1rem solid #d9dcde;
         border-radius: 0.4rem;
         padding: 1.4rem 2rem;
-        width: 100%; }
+        width: 100%;
+        -webkit-appearance: none; }
         .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container input:focus,
         .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container input[type=text]:focus,
         .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container textarea:focus,
         .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container select:focus {
           border: 0.1rem solid #69757d;
           outline: none; }
+      .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container input[type=text],
+      .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container textarea {
+        -webkit-appearance: none; }
       .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container select {
         color: #69757d;
         -webkit-appearance: none;
