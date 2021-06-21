@@ -1399,6 +1399,9 @@ div#main {
     position: relative; }
     .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content h2 {
       margin-bottom: 2.5rem; }
+      @media (max-width: 767px) {
+        .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content h2 {
+          width: 70%; } }
     .ifx-row-controls_carousel .controls-carousel__wrapper .glide__slides .glide__slide .slide__content .caps {
       margin-bottom: 1rem; }
       @media (max-width: 767px) {
