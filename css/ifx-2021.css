@@ -774,10 +774,10 @@ div#main {
     color: #ffffff; }
 
 @media (min-width: 992px) {
-  div#main section:first-of-type {
-    padding-top: 6rem; }
-    div#main section:first-of-type.heroVideoBG {
-      padding-top: 0; }
+  div#main section:first-of-type .ifx-row .ifx-row-wrapper {
+    padding: 13.5rem 0 7.5rem; }
+  div#main section:first-of-type.heroVideoBG {
+    padding-top: 0; }
   div#main section .ifx-row .ifx-row-wrapper {
     padding: 7.5rem 0; } }
 .ifx-row-hero .hero__introduction {
