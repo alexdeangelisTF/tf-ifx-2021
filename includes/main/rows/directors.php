@@ -39,7 +39,7 @@ echo '</div>';
 echo '<div class="row directors-row justify-content-md-center">';
 
 foreach($directors as $director) {
-	echo '<div class="col-12 col-md-6 col-lg-4">';
+	echo '<div class="col-12 col-md-6 col-lg-4 d-none d-md-block d-lg-block d-xl-block">';
 	if ($director['link']) {
 		echo '<a href="https://' . $director['link'] . '" target="_blank">';
 	}
@@ -49,11 +49,59 @@ foreach($directors as $director) {
 	echo '<div class="caps">' . $director['role'] . '</div>';
 	echo '<h6 class="black-3">' . $director['text'] . '</h6>';
 	echo '</div>';
-	echo '</div>';
 	if ($director['link']) {
 		echo '</a>';
 	}
+	echo '</div>';
 }
+
+if ($directors) {
+	echo '<div class="glide__track d-md-none d-lg-none d-xl-none" data-glide-el="track">';
+	echo '<ul class="glide__slides">';
+	foreach($directors as $director) {
+		
+		echo '<div class="glide__slide">';
+		echo '<div class="director-single">';
+		if ($director['link']) {
+			echo '<a href="https://' . $director['link'] . '" target="_blank">';
+		}
+		echo  wp_get_attachment_image($director['image'], 'full');
+		if ($director['link']) {
+			echo '</a>';
+		}
+		echo '<div class="glide__arrows" data-glide-el="controls">';
+		echo '<button class="glide__arrow glide__arrow--left" data-glide-dir="<">';
+		echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
+		echo '</button>';
+		echo '<button class="glide__arrow glide__arrow--right" data-glide-dir=">">';
+		echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
+		echo '</button>';
+		echo '</div>';
+		
+		if ($director['link']) {
+			echo '<a href="https://' . $director['link'] . '" target="_blank">';
+		}
+		echo '<h4>' . $director['name'] . '</h4>';
+		if ($director['link']) {
+			echo '</a>';
+		}
+		echo '<div class="caps">' . $director['role'] . '</div>';
+		echo '<h6 class="black-3">' . $director['text'] . '</h6>';
+		echo '</div>';
+		echo '</div>';
+		
+	}
+	echo '</ul>';
+	
+	echo '</div>';
+	// JS Init
+	echo '<script>';
+	echo 'new Glide(".ifx-row-' . $rowCount . ' .directors-row", {
+	type: "carousel",
+	}).mount()';
+	echo '</script>';
+}
+
 
 echo '</div>';
 
