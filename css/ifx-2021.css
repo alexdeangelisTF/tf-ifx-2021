@@ -1448,7 +1448,10 @@ div#main {
     height: 40px;
     -webkit-transform: inherit;
     -ms-transform: inherit;
-    transform: inherit; }
+    transform: inherit;
+    margin-right: 2rem; }
+    .ifx-row-controls_carousel .controls-carousel__wrapper .glide__arrows button:last-child {
+      margin-right: 0; }
     .ifx-row-controls_carousel .controls-carousel__wrapper .glide__arrows button img {
       width: 18px;
       height: 18px; }
@@ -1642,7 +1645,10 @@ div#main {
           height: 40px;
           -webkit-transform: inherit;
           -ms-transform: inherit;
-          transform: inherit; }
+          transform: inherit;
+          margin-right: 2rem; }
+          .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single .glide__arrows button:last-child {
+            margin-right: 0; }
           .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single .glide__arrows button img {
             width: 18px;
             height: 18px; }
