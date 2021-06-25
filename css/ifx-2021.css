@@ -1302,7 +1302,8 @@ div#main {
         background-position: 98% center;
         background-repeat: no-repeat;
         outline: none;
-        background-size: 25px; }
+        background-size: 25px;
+        background-color: #ffffff; }
       .ifx-row-form .form__wrapper .form__single .gform_wrapper .gform_body ul li .ginput_container.ginput_complex span {
         margin-bottom: 0; }
         @media (max-width: 641px) {
