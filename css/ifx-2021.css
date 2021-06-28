@@ -874,7 +874,6 @@ div#main {
     .ifx-row-feature_tiles .feature-tile .feature-tile__mobile-image img {
       width: 40px;
       height: 40px;
-      border-radius: 0.8rem;
       -o-object-fit: cover;
       object-fit: cover; }
   .ifx-row-feature_tiles .feature-tile .feature-tile__desktop-image {
@@ -1197,6 +1196,63 @@ div#main {
   border: solid 0.1rem #f7f8f8;
   margin-top: 0;
   margin-bottom: 0; }
+.ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction .glide {
+  position: relative; }
+  .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction .glide .glide__arrows {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative; }
+    @media (min-width: 1200px) {
+      .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction .glide .glide__arrows {
+        position: absolute; } }
+    .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction .glide .glide__arrows button {
+      position: relative;
+      min-width: auto;
+      background-color: #ffffff;
+      border-radius: 50%;
+      left: auto;
+      right: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      -webkit-transform: inherit;
+      -ms-transform: inherit;
+      transform: inherit;
+      margin-right: 2rem; }
+      .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction .glide .glide__arrows button:last-child {
+        margin-right: 0; }
+      .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction .glide .glide__arrows button img {
+        width: 18px;
+        height: 18px;
+        box-shadow: none;
+        position: relative;
+        left: 0;
+        top: 0.7rem; }
+        @media (min-width: 992px) {
+          .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction .glide .glide__arrows button img {
+            top: 1.3rem; } }
+      .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction .glide .glide__arrows button.glide__arrow--left img {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg); }
+      .ifx-row-image_text_overlap .image-text-overlap__wrapper.variation .image-text-overlap__introduction .glide .glide__arrows button.glide__arrow--right img {
+        -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
 
 @media (min-width: 768px) {
   .ifx-row-image_text_overlap .image-text-overlap__wrapper .col-image {
