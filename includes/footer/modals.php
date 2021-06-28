@@ -47,12 +47,40 @@ if( have_rows('ifx_flexible_rows') ) {
 								</div>
 								<div class="modal-body source_' . $videoSource . '">
 									<div class="embed-container">
-										' . $iFrame . '
+										
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>';
+					echo '<script>';
+					echo '(function($) {';
+					if ( $rowType == 'hero_video_background') { ?>
+						// Insert iframe into modal
+						$('.ifx-row-<?php echo $rowCount; ?> .hero-video-background__introduction button').on('click',function(e) {
+							//e.preventDefault();
+							$('#videoBGModal_<?php echo $rowCount; ?> .embed-container').append('<?php echo $iFrame; ?>');
+						});
+						// Delete HTML iframe element on close of modal
+						$('#videoBGModal_<?php echo $rowCount; ?>').on("hidden.bs.modal", function () {
+							$(this).find('iframe').remove();
+						});
+					<?php
+					} elseif ($rowType == 'hero') { ?>
+						// Insert iframe into modal
+						$('.ifx-row-<?php echo $rowCount; ?> .hero__image a').on('click',function(e) {
+							//e.preventDefault();
+							$('#heroModal_<?php echo $rowCount; ?> .embed-container').append('<?php echo $iFrame; ?>');
+						});
+						// Delete HTML iframe element on close of modal
+						$('#heroModal_<?php echo $rowCount; ?>').on("hidden.bs.modal", function () {
+							$(this).find('iframe').remove();
+						});
+					<?php
+					} else {}
+					
+					echo '})( jQuery );';
+					echo '</script>';
 
 				}
 				
