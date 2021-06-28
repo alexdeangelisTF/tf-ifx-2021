@@ -29,13 +29,27 @@ if ($linkStyle) {
 	$link = false;
 }
 
+$videoModal = false;
+$videoModal = get_sub_field('video_modal');
+
 echo '<div class="ifx-row-wrapper">';
 
 echo '<div class="container">';
 echo '<div class="row flex-md-row-reverse ' . $rowClass . '">';
 echo '<div class="col-12 col-md-6 col-lg-7">';
 echo '<div class="hero__image ' . $imageClass . '">';
-echo  wp_get_attachment_image($imageID, 'full');
+
+if ($videoModal) {
+	echo '<a href="#" data-toggle="modal" data-target="#heroModal_' . $rowCount . '" class="d-flex align-items-center justify-content-center">';
+	echo '<div class="hero__play-button d-flex align-items-center justify-content-center">';
+	echo '<i class="fas fa-play"></i>';
+	echo '</div>';
+	echo  wp_get_attachment_image($imageID, 'full');
+	echo '</a>';
+} else {
+	echo  wp_get_attachment_image($imageID, 'full');
+}
+
 echo '</div>';
 echo '</div>';
 echo '<div class="col-12 col-md-6 col-lg-5">';
