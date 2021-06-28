@@ -823,8 +823,19 @@ div#main {
     .ifx-row-image_text .ifx-row-wrapper .image-text__introduction {
       max-width: 56.8rem; } }
 .ifx-row-image_text .ifx-row-wrapper .image-text__image img {
-  width: 100%;
-  max-width: 68.8rem; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .ifx-row-image_text .ifx-row-wrapper .image-text__image img {
+      max-width: 28.5rem; } }
+  @media (min-width: 992px) {
+    .ifx-row-image_text .ifx-row-wrapper .image-text__image img {
+      max-width: 48rem; } }
+  @media (min-width: 1200px) {
+    .ifx-row-image_text .ifx-row-wrapper .image-text__image img {
+      max-width: 58rem; } }
+  @media (min-width: 1440px) {
+    .ifx-row-image_text .ifx-row-wrapper .image-text__image img {
+      max-width: 68.8rem; } }
 @media (min-width: 768px) {
   .ifx-row-image_text .ifx-row-wrapper.text_image .image-text__image {
     width: 100%;
