@@ -13,7 +13,7 @@ if ($layout == 'text_image') {
 	$rowReverse = false;
 }
 
-echo '<div class="ifx-row-wrapper">';
+echo '<div class="ifx-row-wrapper ' . $layout . '">';
 
 echo '<div class="container">';
 echo '<div class="row ' . $rowReverse . '">';
