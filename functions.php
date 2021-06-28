@@ -27,7 +27,7 @@ function your_scripts() {
 	/*Basic Styles*/
 	wp_enqueue_style( 'styles', get_stylesheet_uri(), array(), '1.0.0' );
 	/*IFX 2021 Styles*/
-	wp_enqueue_style( 'ifx-2021-styles', get_stylesheet_directory_uri() . '/css/ifx-2021.css', array(), '1.0.45' );
+	wp_enqueue_style( 'ifx-2021-styles', get_stylesheet_directory_uri() . '/css/ifx-2021.css', array(), '1.0.46' );
 	/*Bootstrap JS*/
 	wp_enqueue_script('bootstrap-js-bundle', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js', array('jquery'), null, true);
 	/*GlideJS - Carousel*/
