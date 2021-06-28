@@ -14,27 +14,29 @@ echo '<div class="container">';
 
 echo '<div class="directors__wrapper">';
 
-echo '<div class="row justify-content-center">';
-echo '<div class="col-10 col-lg-6">';
-echo '<div class="directors__introduction">';
-if ($preheading) {
-	echo '<div class="caps">';
-	echo $preheading;
+if ($preheading || $heading || $text) {
+	echo '<div class="row justify-content-center">';
+	echo '<div class="col-10 col-lg-6">';
+	echo '<div class="directors__introduction">';
+	if ($preheading) {
+		echo '<div class="caps">';
+		echo $preheading;
+		echo '</div>';
+	}
+	if ($heading) {
+		echo '<h2 class="weight-700">';
+		echo $heading;
+		echo '</h2>';
+	}
+	if ($text) {
+		echo '<h5 class="black-3">';
+		echo $text;
+		echo '</h5>';
+	}
+	echo '</div>';
+	echo '</div>';
 	echo '</div>';
 }
-if ($heading) {
-	echo '<h2 class="weight-700">';
-	echo $heading;
-	echo '</h2>';
-}
-if ($text) {
-	echo '<h5 class="black-3">';
-	echo $text;
-	echo '</h5>';
-}
-echo '</div>';
-echo '</div>';
-echo '</div>';
 
 echo '<div class="row directors-row justify-content-md-center">';
 
