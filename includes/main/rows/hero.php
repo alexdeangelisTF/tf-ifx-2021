@@ -42,7 +42,7 @@ echo '<div class="hero__image ' . $imageClass . '">';
 if ($videoModal) {
 	echo '<a href="#" data-toggle="modal" data-target="#heroModal_' . $rowCount . '" class="d-flex align-items-center justify-content-center">';
 	echo '<div class="hero__play-button d-flex align-items-center justify-content-center">';
-	echo '<i class="fas fa-play"></i>';
+	echo '<img src="' . get_template_directory_uri() . '/img/playbutton.svg" />';
 	echo '</div>';
 	echo  wp_get_attachment_image($imageID, 'full');
 	echo '</a>';
