@@ -54,7 +54,7 @@ echo '</style>';
 								if ($videoModal) {
 									$buttonText = false;
 									$buttonText = get_sub_field('button_text');
-									echo '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoBGModal">
+									echo '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#videoBGModal_' . $rowCount .  '">
 												' . $buttonText . ' <span><i class="fas fa-play"></i></span>
 												</button>';
 								}
