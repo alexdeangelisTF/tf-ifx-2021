@@ -817,8 +817,22 @@ div#main {
         position: absolute;
         top: 0;
         right: 0; } }
-.ifx-row-image_text .image-text__introduction {
+.ifx-row-image_text .ifx-row-wrapper .image-text__introduction {
   margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .ifx-row-image_text .ifx-row-wrapper .image-text__introduction {
+      max-width: 56.8rem; } }
+.ifx-row-image_text .ifx-row-wrapper .image-text__image img {
+  width: 100%;
+  max-width: 68.8rem; }
+@media (min-width: 768px) {
+  .ifx-row-image_text .ifx-row-wrapper.text_image .image-text__image {
+    width: 100%;
+    text-align: right; } }
+@media (min-width: 768px) {
+  .ifx-row-image_text .ifx-row-wrapper.image_text .image-text__image {
+    width: 100%;
+    text-align: left; } }
 
 .ifx-row-feature_tiles .feature-tiles__introduction h5 {
   color: #69757d; }
