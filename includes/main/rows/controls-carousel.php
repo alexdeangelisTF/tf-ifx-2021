@@ -25,7 +25,7 @@ echo '<div class="glide">';
 echo '<div class="row align-items-lg-center">';
 
 // Introduction
-echo '<div class="col-9 col-lg-5">';
+echo '<div class="col-12 col-lg-5">';
 echo '<div class="controls-carousel__introduction">';
 if ($preheading) {
 	echo '<div class="caps">';
