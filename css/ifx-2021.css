@@ -807,6 +807,24 @@ div#main {
       content: "\f061";
       margin-left: 1.5rem;
       color: #3b7cdb; }
+.ifx-row-hero .hero__image a {
+  position: relative; }
+  .ifx-row-hero .hero__image a .hero__play-button {
+    width: 8.2rem;
+    height: 8.2rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 18px 18px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1);
+    transition: all 0.5s; }
+    .ifx-row-hero .hero__image a .hero__play-button i {
+      position: relative;
+      left: 0.3rem; }
+      .ifx-row-hero .hero__image a .hero__play-button i:before {
+        font-size: 1.8rem;
+        color: #4a90e2; }
+  .ifx-row-hero .hero__image a:hover .hero__play-button {
+    box-shadow: 0 36px 36px 0 rgba(51, 91, 130, 0.12), 0 0 1px 0 rgba(10, 31, 68, 0.1); }
 
 @media (min-width: 768px) {
   .ifx-row-hero .hero__image {
@@ -1775,7 +1793,7 @@ div#main {
 .modal.modal__video-background .modal-header {
   padding: 0;
   display: block;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   border: none; }
   .modal.modal__video-background .modal-header button {
     padding: 0;
