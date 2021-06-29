@@ -71,7 +71,7 @@ if ($directors) {
 		if ($director['link']) {
 			echo '</a>';
 		}
-		echo '<div class="glide__arrows" data-glide-el="controls">';
+		echo '<div class="glide__arrows">';
 		echo '<button class="glide__arrow glide__arrow--left" data-glide-dir="<">';
 		echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
 		echo '</button>';
@@ -98,9 +98,18 @@ if ($directors) {
 	echo '</div>';
 	// JS Init
 	echo '<script>';
-	echo 'new Glide(".ifx-row-' . $rowCount . ' .directors-row", {
+	echo 'var glide = new Glide(".ifx-row-' . $rowCount . ' .directors-row", {
 	type: "carousel",
-	}).mount()';
+	}).mount();';
+
+	?>
+	jQuery('.ifx-row-<?php echo $rowCount; ?> .glide__arrow--left').on('click',function() {
+		glide.go('<')
+	});
+	jQuery('.ifx-row-<?php echo $rowCount; ?> .glide__arrow--right').on('click',function() {
+		glide.go('>')
+	});
+<?php
 	echo '</script>';
 }
 
