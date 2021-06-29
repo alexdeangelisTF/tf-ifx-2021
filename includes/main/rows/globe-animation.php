@@ -16,7 +16,7 @@ echo '<div class="col-12">';
 echo '<div class="globe-animation__wrapper">';
 
 echo '<div class="row d-flex justify-content-center">';
-echo '<div class="col-8 col-lg-6">';
+echo '<div class="col-12 col-lg-6">';
 
 echo '<div class="globe-animation__introduction">';
 
