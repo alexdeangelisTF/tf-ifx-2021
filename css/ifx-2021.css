@@ -899,13 +899,17 @@ div#main {
 @media (min-width: 768px) {
   .ifx-row-feature_tiles .col-12:nth-child(even) .feature-tile {
     position: relative;
-    bottom: 30rem; }
+    bottom: 10rem; }
   .ifx-row-feature_tiles .background-shape {
     background-color: #fafcfe;
     position: absolute;
     width: 60%;
     min-height: 90%;
     max-height: 3000px; } }
+@media (min-width: 992px) {
+  .ifx-row-feature_tiles .col-12:nth-child(even) .feature-tile {
+    position: relative;
+    bottom: 30rem; } }
 @media (max-width: 767px) {
   .ifx-row-feature_tiles .col-12:last-child .feature-tile {
     margin-bottom: 0; } }
