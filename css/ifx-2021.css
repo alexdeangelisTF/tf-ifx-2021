@@ -662,6 +662,11 @@ header {
         padding: 1.4rem 3rem; }
         header ul li ul li a.dropdown-item:hover {
           background-color: transparent; }
+        header ul li ul li a.dropdown-item:active {
+          color: #000000;
+          background-color: #ffffff; }
+        header ul li ul li a.dropdown-item:focus {
+          background-color: #ffffff; }
     header ul li a.dropdown-toggle:after {
       display: none; }
     header ul li:last-child {
