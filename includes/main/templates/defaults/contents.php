@@ -31,7 +31,7 @@ if (is_page_template('template-form.php')) {
 
 	if (is_singular('careers')) {
 		if ($careersAboutIfxPayments) {
-			echo '<h4 class="weight-700">About IFX Payments</h4>';
+			//echo '<h4 class="weight-700">About IFX Payments</h4>';
 			echo $careersAboutIfxPayments;
 		}
 		if ($careersRole) {
