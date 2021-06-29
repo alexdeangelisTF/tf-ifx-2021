@@ -74,7 +74,14 @@ if ($enableVariation) {
 }
 
 echo '<div class="row">';
-echo '<div class="col-12 col-image">';
+
+if ($rowType == 'carousel') {
+	$hideImageClass = 'd-none d-md-block d-lg-block d-xl-block';
+} else {
+	$hideImageClass = false;
+}
+
+echo '<div class="col-12 col-image ' . $hideImageClass . '">';
 
 echo '<div class="image-text-overlap__container ' . $rowReverse . '">';
 
