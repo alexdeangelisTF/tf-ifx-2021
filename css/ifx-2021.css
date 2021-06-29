@@ -2235,7 +2235,11 @@ div#main {
   .ifx-row-globe_animation .container {
     padding: 0; }
     .ifx-row-globe_animation .container .globe-animation__wrapper .globe-animation__introduction {
-      text-align: center; }
+      text-align: center;
+      padding: 0 2.5rem; }
+      @media (min-width: 768px) {
+        .ifx-row-globe_animation .container .globe-animation__wrapper .globe-animation__introduction {
+          padding: 0; } }
       .ifx-row-globe_animation .container .globe-animation__wrapper .globe-animation__introduction h5 {
         color: #69757d; }
     .ifx-row-globe_animation .container .globe-animation__wrapper .globe-animation__media video {
