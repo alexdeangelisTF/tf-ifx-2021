@@ -596,7 +596,7 @@ header {
           header .mobile-menu-dropdown ul li.wrap ul.sub-menu > li {
             width: 50%; }
         header .mobile-menu-dropdown ul li.button a {
-          background-color: #3b7cdb;
+          background-color: #ff5657;
           width: 100%;
           display: block;
           text-align: center;
@@ -611,6 +611,8 @@ header {
           font-size: 1.8rem; }
         header .mobile-menu-dropdown ul.menu > li:last-child {
           margin-bottom: 0; }
+      header .mobile-menu-dropdown ul.menu li a:hover {
+        text-decoration: none; }
       header .mobile-menu-dropdown ul.sub-menu {
         padding-top: 1rem; }
         header .mobile-menu-dropdown ul.sub-menu a {
@@ -621,7 +623,9 @@ header {
           display: -ms-flexbox;
           display: flex; }
           header .mobile-menu-dropdown ul.sub-menu a:before {
-            margin-right: 1.6rem; }
+            margin-right: 1.6rem;
+            position: relative;
+            top: 0.2rem; }
   header img.white {
     display: none; }
 
