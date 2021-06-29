@@ -5,6 +5,8 @@ $text = false;
 $text = get_sub_field('text');
 $imageID = false;
 $imageID = get_sub_field('image');
+$imageMobileID = false;
+$imageMobileID = get_sub_field('image_mobile');
 $linkStyle = false;
 $linkStyle = get_sub_field('link_style');
 $allowImageOverlap = false;
@@ -39,15 +41,37 @@ echo '<div class="row flex-md-row-reverse ' . $rowClass . '">';
 echo '<div class="col-12 col-md-6 col-lg-7">';
 echo '<div class="hero__image ' . $imageClass . '">';
 
+if ($imageMobileID) {
+	$desktopImageClass = 'd-none d-md-block d-lg-block d-xl-block';
+	$mobileImageClass = 'd-md-none d-lg-none d-xl-none';
+} else {
+	$desktopImageClass = 'd-block';
+	$mobileImageClass = 'd-none';
+}
+
 if ($videoModal) {
 	echo '<a href="#" data-toggle="modal" data-target="#heroModal_' . $rowCount . '" class="d-flex align-items-center justify-content-center">';
 	echo '<div class="hero__play-button d-flex align-items-center justify-content-center">';
 	echo '<img src="' . get_template_directory_uri() . '/img/playbutton.svg" />';
 	echo '</div>';
+	echo '<div class="hero__image-desktop ' . $desktopImageClass . '">';
 	echo  wp_get_attachment_image($imageID, 'full');
+	echo '</div>';
+	if ($imageMobileID) {
+		echo '<div class="hero__image-mobile ' . $mobileImageClass . '">';
+		echo  wp_get_attachment_image($imageMobileID, 'full');
+		echo '</div>';
+	}
 	echo '</a>';
 } else {
+	echo '<div class="hero__image-desktop ' . $desktopImageClass . '">';
 	echo  wp_get_attachment_image($imageID, 'full');
+	echo '</div>';
+	if ($imageMobileID) {
+		echo '<div class="hero__image-mobile ' . $mobileImageClass . '">';
+		echo  wp_get_attachment_image($imageMobileID, 'full');
+		echo '</div>';
+	}
 }
 
 echo '</div>';
