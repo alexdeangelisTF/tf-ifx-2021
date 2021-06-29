@@ -1769,8 +1769,26 @@ div#main {
       object-fit: cover; }
     .ifx-row-directors .directors__wrapper .director-single h4 {
       margin-top: 2.4rem; }
-  .ifx-row-directors .directors__wrapper .directors-row .col-12 > a:hover {
-    text-decoration: none; }
+  .ifx-row-directors .directors__wrapper .directors-row .col-12 > a {
+    transition: all 0.5s; }
+    .ifx-row-directors .directors__wrapper .directors-row .col-12 > a img {
+      transition: all 0.5s;
+      -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+      -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0); }
+    .ifx-row-directors .directors__wrapper .directors-row .col-12 > a:hover {
+      text-decoration: none;
+      transition: all 0.5s; }
+      .ifx-row-directors .directors__wrapper .directors-row .col-12 > a:hover img {
+        transition: all 0.5s;
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        -webkit-transform: translateY(-5px);
+        -moz-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        -o-transform: translateY(-5px);
+        transform: translateY(-5px); }
   .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide {
     padding: 0 2.5rem; }
     .ifx-row-directors .directors__wrapper .directors-row .glide__slides .glide__slide .director-single {
