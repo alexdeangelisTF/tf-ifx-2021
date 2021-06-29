@@ -2590,6 +2590,10 @@ div#main {
           content: "\f0d8"; }
       .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.high, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.low, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.open, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.time {
         display: none; }
+      .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td.percentage span {
+        display: inline-block;
+        width: 4rem;
+        text-align: right; }
 .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th {
   font-size: 1.6rem;
   padding: 1rem 0;
