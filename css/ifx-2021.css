@@ -2695,8 +2695,26 @@ div#main {
       margin-bottom: 1.5rem; }
   .ifx-row-news .news-single {
     margin-bottom: 3rem; }
-    .ifx-row-news .news-single a:hover {
-      text-decoration: none; }
+    .ifx-row-news .news-single a {
+      transition: all 0.5s; }
+      .ifx-row-news .news-single a .ratio {
+        transition: all 0.5s;
+        -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0); }
+      .ifx-row-news .news-single a:hover {
+        transition: all 0.5s;
+        text-decoration: none; }
+        .ifx-row-news .news-single a:hover .ratio {
+          transition: all 0.5s;
+          -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+          -webkit-transform: translateY(-5px);
+          -moz-transform: translateY(-5px);
+          -ms-transform: translateY(-5px);
+          -o-transform: translateY(-5px);
+          transform: translateY(-5px); }
     .ifx-row-news .news-single .news-image .ratio {
       border-radius: 0.4rem; }
       .ifx-row-news .news-single .news-image .ratio.double:before {
