@@ -190,6 +190,14 @@ if ($jsonURL) {
 			<?php } else {} ?>
 			</div>
 		</div>
+		<?php
+		 $termsConditionsText = get_sub_field('terms_conditions_text');
+		 if ($termsConditionsText) {
+			 echo '<div class="exchange-rates__toc">';
+			 echo wpautop($termsConditionsText);
+			 echo '</div>';
+		 }
+		?>
 	</div>
 </div>
 

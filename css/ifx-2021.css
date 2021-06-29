@@ -2557,6 +2557,11 @@ div#main {
     padding-left: 1.5rem; }
   .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#high, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#low, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#open, .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table thead tr th#time {
     display: none; }
+.ifx-row-exchange_rates .exchange-rates__wrapper .exchange-rates__toc {
+  margin-top: 3rem; }
+  .ifx-row-exchange_rates .exchange-rates__wrapper .exchange-rates__toc p {
+    font-size: 1.4rem;
+    line-height: 2.2rem; }
 
 @media (min-width: 768px) {
   .ifx-row-exchange_rates .exchange-rates__wrapper #exchangeRatesComponent table.ratesTable tr td {
