@@ -156,13 +156,13 @@ if ($jsonURL) {
 
 							<tr data-pairs="<?php echo $ifx_exchange_rates_currency_pair_code; ?>" id="#tableRow">
 								<td><span class="currency-flag currency-flag-<?php echo $ifx_exchange_rates_currency_1 . '_' . $pair_count; ?>"></span><?php echo $ifx_exchange_rates_currency_1; ?><span class="currency-flag currency-flag-<?php echo $ifx_exchange_rates_currency_2 . '_' . $pair_count; ?>"></span><?php echo $ifx_exchange_rates_currency_2; ?></td>
-								<td data-value="<?php echo $currency_pair_bid; ?>" class="bid" id="<?php echo $ifx_exchange_rates_currency_pair_code; ?>_bid"><?php echo $currency_pair_bid; ?></td>
-								<td data-value="<?php echo $currency_pair_ask; ?>" class="ask" id="<?php echo $ifx_exchange_rates_currency_pair_code; ?>_ask"><?php echo $currency_pair_ask; ?></td>
-								<td data-value="<?php echo $currency_pair_percentage; ?>" class="percentage"  id="<?php echo $ifx_exchange_rates_currency_pair_code; ?>_percentage"><?php echo $currency_pair_percentage; ?></td>
-								<td data-value="<?php echo $currency_pair_high; ?>" class="high"><?php echo $currency_pair_high; ?></td>
-								<td data-value="<?php echo $currency_pair_low; ?>" class="low"><?php echo $currency_pair_low; ?></td>
-								<td data-value="<?php echo $currency_pair_open; ?>" class="open"><?php echo $currency_pair_open; ?></td>
-								<td class="time" id="<?php echo $ifx_exchange_rates_currency_pair_code; ?>_time"><?php echo $the_time; ?></td>
+								<td data-value="<?php echo $currency_pair_bid; ?>" class="bid" id="<?php echo $ifx_exchange_rates_currency_pair_code; ?>_bid"><span><?php echo $currency_pair_bid; ?></span></td>
+								<td data-value="<?php echo $currency_pair_ask; ?>" class="ask" id="<?php echo $ifx_exchange_rates_currency_pair_code; ?>_ask"><span><?php echo $currency_pair_ask; ?></span></td>
+								<td data-value="<?php echo $currency_pair_percentage; ?>" class="percentage"  id="<?php echo $ifx_exchange_rates_currency_pair_code; ?>_percentage"><span><?php echo $currency_pair_percentage; ?></span></td>
+								<td data-value="<?php echo $currency_pair_high; ?>" class="high"><span><?php echo $currency_pair_high; ?></span></td>
+								<td data-value="<?php echo $currency_pair_low; ?>" class="low"><span><?php echo $currency_pair_low; ?></span></td>
+								<td data-value="<?php echo $currency_pair_open; ?>" class="open"><span><?php echo $currency_pair_open; ?></span></td>
+								<td class="time" id="<?php echo $ifx_exchange_rates_currency_pair_code; ?>_time"><span><?php echo $the_time; ?></span></td>
 								<?php if ($ifx_exchange_rates_currency_1_img || $ifx_exchange_rates_currency_2_img) { ?>
 								<style>
 										.currency-flag-<?php echo $ifx_exchange_rates_currency_1 . '_' . $pair_count;; ?> {

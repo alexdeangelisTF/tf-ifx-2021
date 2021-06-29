@@ -46,7 +46,7 @@ function fun() {
                 var bid_newValue_strip = bid_newValue.substr(0, 6);
                 // We then add the bid_newValue_strip variable to both the inner HTML of the correct row within the bid column & the data-value attribute of the same row,
                 // in order to then use that as the current value once the Ajax loops again
-                document.getElementById("<?php echo $ifx_exchange_rates_currency_pair_code; ?>_bid").innerHTML = bid_newValue_strip;
+                document.getElementById("<?php echo $ifx_exchange_rates_currency_pair_code; ?>_bid").innerHTML = '<span>' + bid_newValue_strip + '</span>';
                 jQuery('#<?php echo $ifx_exchange_rates_currency_pair_code; ?>_bid').attr('data-value', bid_newValue_strip);
 
 
@@ -73,7 +73,7 @@ function fun() {
                 var ask_newValue_strip = ask_newValue.substr(0, 6);
                 // We then add the ask_newValue_strip variable to both the inner HTML of the correct row within the ask column & the data-value attribute of the same row,
                 // in order to then use that as the current value once the Ajax loops again
-                document.getElementById("<?php echo $ifx_exchange_rates_currency_pair_code; ?>_ask").innerHTML = ask_newValue_strip;
+                document.getElementById("<?php echo $ifx_exchange_rates_currency_pair_code; ?>_ask").innerHTML = '<span>' + ask_newValue_strip + '</span>';
                 jQuery('#<?php echo $ifx_exchange_rates_currency_pair_code; ?>_ask').attr('data-value', ask_newValue_strip);
 
 
@@ -126,7 +126,7 @@ function fun() {
                 }
                 // We then add the percent_newValue variable to both the inner HTML of the correct row within the percent column & the data-value attribute of the same row,
                 // in order to then use that as the current value once the Ajax loops again
-                document.getElementById("<?php echo $ifx_exchange_rates_currency_pair_code; ?>_percentage").innerHTML = percent_newValue;
+                document.getElementById("<?php echo $ifx_exchange_rates_currency_pair_code; ?>_percentage").innerHTML = '<span>' + percent_newValue + '</span>';
                 jQuery('#<?php echo $ifx_exchange_rates_currency_pair_code; ?>_percentage').attr('data-value', percent_newValue);
 
                 // The timeNow variable gets the date now, with hourNow, minuteNow & secondNow getting the correct value within timeNow
@@ -142,7 +142,7 @@ function fun() {
 
                 // This if statement checks if any value from bid, ask or percent has changed, & if it has the new time will be added to the time column in the correct row
                 if (bid_currentValue > bid_newValue || bid_currentValue < bid_newValue || ask_currentValue > ask_newValue || ask_currentValue < ask_newValue || percent_currentValue > percent_newValue || percent_currentValue < percent_newValue) {
-                    document.getElementById("<?php echo $ifx_exchange_rates_currency_pair_code; ?>_time").innerHTML = hourNow + ":" + minuteNow + ":" + secondNow;
+                    document.getElementById("<?php echo $ifx_exchange_rates_currency_pair_code; ?>_time").innerHTML = "<span>" + hourNow + ":" + minuteNow + ":" + secondNow + '</span>';
                 } else {}
             
             <?php
