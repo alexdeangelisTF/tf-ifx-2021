@@ -119,7 +119,7 @@ if ($slides) {
 		echo '<div class="col-12 col-md-5 d-md-flex align-items-md-center">';
 		echo '<div class="slide__content">';
 		
-		echo '<div class="d-md-none d-lg-none d-xl-none glide__arrows" data-glide-el="controls">';
+		echo '<div class="d-md-none d-lg-none d-xl-none glide__arrows">';
 		echo '<button class="glide__arrow glide__arrow--left" data-glide-dir="<">';
 		echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
 		echo '</button>';
@@ -163,9 +163,17 @@ echo '</div>';
 // JS Init
 if ($slides) {
 	echo '<script>';
-	echo 'new Glide(".ifx-row-' . $rowCount . ' .glide", {
+	echo 'var glide = new Glide(".ifx-row-' . $rowCount . ' .glide", {
 	type: "carousel",
-	}).mount()';
+	}).mount();';
+	?>
+	jQuery('.ifx-row-<?php echo $rowCount; ?> .glide__arrow--left').on('click',function() {
+		glide.go('<')
+	});
+	jQuery('.ifx-row-<?php echo $rowCount; ?> .glide__arrow--right').on('click',function() {
+		glide.go('>')
+	});
+	<?php
 	echo '</script>';
 }
 

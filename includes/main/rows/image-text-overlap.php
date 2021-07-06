@@ -262,7 +262,7 @@ if (!$rowType || $rowType == 'basic') {
 		}
 		echo '</ul>';
 		echo '</div>';
-		echo '<div class="glide__arrows" data-glide-el="controls">';
+		echo '<div class="glide__arrows">';
     echo '<button class="glide__arrow glide__arrow--left" data-glide-dir="<">';
 		echo '<img src="' . get_template_directory_uri() . '/img/blue/angle-down.svg" />';
 		echo '</button>';
@@ -273,10 +273,17 @@ if (!$rowType || $rowType == 'basic') {
 		echo '</div>';
 
 		echo '<script>';
-		echo 'new Glide(".ifx-row-' . $rowCount . ' .glide-mobile", {
+		echo 'var glide = new Glide(".ifx-row-' . $rowCount . ' .glide-mobile", {
 		type: "carousel",
-		}).mount()';
-		
+		}).mount();';
+		?>
+		jQuery('.ifx-row-<?php echo $rowCount; ?> .glide__arrow--left').on('click',function() {
+			glide.go('<')
+		});
+		jQuery('.ifx-row-<?php echo $rowCount; ?> .glide__arrow--right').on('click',function() {
+			glide.go('>')
+		});
+		<?php
 		echo '</script>';
 
 	}
