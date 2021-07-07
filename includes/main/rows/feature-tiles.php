@@ -37,7 +37,15 @@ if ($tiles) {
 		echo '<div class="feature-tile__images flex-md-grow-1 d-md-flex justify-content-md-center align-items-md-center">';
 		if ($tile['mobile_image']) {
 			echo '<div class="feature-tile__mobile-image d-md-none">';
-			echo wp_get_attachment_image($tile['mobile_image'], 'medium');
+			// Check if the image is svg
+			$imageURL = false;
+			$imageURL = wp_get_attachment_image_url($tile['mobile_image']);
+			$imageExt = substr($imageURL, strrpos($imageURL, '.') + 1);
+			if ($imageExt == 'svg') {
+				echo file_get_contents($imageURL);
+			} else {
+				echo wp_get_attachment_image($tile['mobile_image'], 'medium');
+			}
 			echo '</div>';
 		}
 		if ($tile['desktop_image']) {

@@ -890,6 +890,9 @@ div#main {
       height: 40px;
       -o-object-fit: cover;
       object-fit: cover; }
+    .ifx-row-feature_tiles .feature-tile .feature-tile__mobile-image svg {
+      width: 40px;
+      height: 40px; }
   .ifx-row-feature_tiles .feature-tile .feature-tile__desktop-image {
     margin-bottom: 3rem; }
     .ifx-row-feature_tiles .feature-tile .feature-tile__desktop-image img {
