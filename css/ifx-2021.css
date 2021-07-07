@@ -1033,6 +1033,13 @@ div#main {
         .ifx-row-tiles .tile .tile__image img {
           width: 4.8rem;
           height: 4.8rem; } }
+    .ifx-row-tiles .tile .tile__image svg {
+      width: 4rem;
+      height: 4rem; }
+      @media (min-width: 992px) {
+        .ifx-row-tiles .tile .tile__image svg {
+          width: 4.8rem;
+          height: 4.8rem; } }
 
 @media (max-width: 991px) {
   .ifx-row-tiles .tiles__wrapper .tile {

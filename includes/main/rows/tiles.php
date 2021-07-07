@@ -38,7 +38,16 @@ if ($tiles) {
 		echo '<div class="tile__images">';
 		if ($tile['image']) {
 			echo '<div class="tile__image">';
-			echo wp_get_attachment_image($tile['image'], 'medium');
+			// Check if the image is svg
+			$imageURL = false;
+			$imageURL = wp_get_attachment_image_url($tile['image']);
+			$imageExt = false;
+			$imageExt = substr($imageURL, strrpos($imageURL, '.') + 1);
+			if ($imageExt == 'svg') {
+				echo file_get_contents($imageURL);
+			} else {
+				echo wp_get_attachment_image($tile['mimage'], 'medium');
+			}
 			echo '</div>';
 		}
 		echo '</div>';

@@ -40,6 +40,7 @@ if ($tiles) {
 			// Check if the image is svg
 			$imageURL = false;
 			$imageURL = wp_get_attachment_image_url($tile['mobile_image']);
+			$imageExt = false;
 			$imageExt = substr($imageURL, strrpos($imageURL, '.') + 1);
 			if ($imageExt == 'svg') {
 				echo file_get_contents($imageURL);
