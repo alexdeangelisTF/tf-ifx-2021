@@ -8,7 +8,20 @@ $preheading = get_sub_field('preheading');
 $mediaType = false;
 $mediaType = get_sub_field('media_type');
 
+$customBackgroundColour = false;
+$customBackgroundColour = get_sub_field('custom_background_colour');
+
 echo '<div class="ifx-row-wrapper">';
+
+if ($customBackgroundColour) {
+	echo '<style>';
+	echo '.ifx-row-globe_animation.ifx-row-' . $rowCount . '{';
+	echo 'background-color:' . $customBackgroundColour . ';';
+	echo 'background-image:none;';
+	echo '}';
+	echo '</style>';
+}
+
 echo '<div class="container">';
 echo '<div class="row">';
 
