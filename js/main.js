@@ -1,3 +1,10 @@
+function showname () {
+	var name = document.getElementsByClassName("ifx-fileupload");
+	//alert('Selected file: ' + name.files.item(0).name);
+	//console.log(name[0].files.item(0).name);
+	jQuery('.gform_wrapper .ginput_container_fileupload .fileinputs .fakefile p').text(name[0].files.item(0).name);
+};
+
 (function($) {
 	
 	/* Header Dropdown */
@@ -65,5 +72,10 @@
 		// Enable scroll
 		window.removeEventListener('scroll', noScroll);
 	});
-	
+
+	// Wrap form file input with new div
+	$('.gform_wrapper .ginput_container_fileupload input[type=file]').wrap("<div class='fileinputs'></div>");
+	$('.gform_wrapper .ginput_container_fileupload .fileinputs').append("<div class='fakefile'><input /><p>Upload CV</p><div class='file-button'>Upload</div></div>");
+	$('.gform_wrapper .ginput_container_fileupload input[type=file]').attr( "onchange", "showname()" );
+	$('.gform_wrapper .ginput_container_fileupload input[type=file]').addClass( "ifx-fileupload" );
 })( jQuery );
